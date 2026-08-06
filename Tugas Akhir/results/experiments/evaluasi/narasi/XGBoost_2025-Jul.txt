@@ -1,0 +1,16 @@
+Model     : XGBoost
+Bulan     : 2025-Jul (kontrol tepat)
+Aktual    : 5,25% (bulan sebelumnya 5,50%)
+Prediksi  : 5,25% (arah tepat)
+Faktor    : BI-Rate bulan sebelumnya (menahan turun, ~32%); pertumbuhan kredit (menahan turun, ~26%); BI-Rate dua bulan lalu (menahan turun, ~16%); jumlah uang beredar (M2) (menahan turun, ~5%); nilai tukar rupiah (mendorong naik, ~4%)
+------------------------------------------------------------------------
+
+Prediksi BI-Rate untuk periode Juli 2025 adalah 5,25%. Angka ini merupakan hasil dari interaksi beberapa faktor ekonomi yang saling tarik-menarik. Ada faktor-faktor yang berperan menggeser prediksi ke arah lebih tinggi, sementara faktor lain menahannya lebih rendah.
+
+Dimulai dari faktor yang menggeser prediksi ke arah lebih tinggi, nilai tukar rupiah terhadap dolar AS menjadi salah satu indikator yang perlu diperhatikan. Pada bulan ini, rupiah berada pada level 16.281 Rp/USD, mengalami pelemahan sebesar 69,22 Rp/USD dibanding bulan sebelumnya. Faktor ini berkontribusi sekitar 4% terhadap prediksi bulan ini, berperan menggeser angka prediksi ke arah yang lebih tinggi. Selain itu, suku bunga riil, yang menunjukkan imbal hasil setelah memperhitungkan inflasi, juga berperan dalam prediksi ini. Meskipun suku bunga riil turun dari 3,63% menjadi 3,13%, faktor ini tetap memberikan pengaruh sekitar 3% terhadap prediksi, menggeser angka prediksi ke atas. Pertumbuhan ekonomi, yang diukur dari laju pertumbuhan Produk Domestik Bruto (PDB), dan suku bunga The Fed masing-masing berkontribusi sekitar 2% terhadap prediksi, juga ikut mendorong angka ke arah lebih tinggi.
+
+Di sisi lain, ada faktor-faktor yang menahan prediksi ke arah lebih rendah. BI-Rate bulan sebelumnya, yang tetap stabil di 5,50%, memberikan pengaruh signifikan, sekitar 32% dari total pengaruh bulan ini. Ini mencerminkan kebijakan Bank Indonesia yang cenderung menjaga kesinambungan suku bunga. Pertumbuhan kredit yang menurun dari 7,57% menjadi 6,67% juga memberikan pengaruh besar, sekitar 26%, menahan angka prediksi lebih rendah. Selain itu, BI-Rate dua bulan lalu yang turun dari 5,75% menjadi 5,50% turut menahan prediksi, dengan kontribusi sekitar 16%. Jumlah uang beredar (M2), yang turun sebesar 20,36 triliun Rp menjadi 9.575 triliun Rp, juga ikut menahan angka prediksi, meskipun pengaruhnya lebih kecil, sekitar 5%.
+
+Secara keseluruhan, faktor yang paling dominan dalam menentukan prediksi bulan ini adalah BI-Rate bulan sebelumnya, dengan pengaruh sekitar 32%. Faktor lain seperti pertumbuhan kredit dan BI-Rate dua bulan lalu saling mengimbangi dan memberikan kontribusi yang signifikan dalam menahan angka prediksi. Sementara itu, faktor-faktor yang mendorong kenaikan seperti nilai tukar rupiah dan suku bunga riil memberikan pengaruh yang lebih kecil namun tetap penting.
+
+Penjelasan ini disusun berdasarkan pola yang dipelajari model dari data historis. Untuk interpretasi ekonomi yang lebih mendalam, analisis lebih lanjut dari para pakar tetap diperlukan.

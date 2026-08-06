@@ -1,0 +1,129 @@
+{
+  "ARIMA": {
+    "experiment_id": "E152",
+    "RMSE": 0.8973893602172817,
+    "MAPE": 14.045270958702188,
+    "R2": -3.265353695326537,
+    "source_phase": "focused",
+    "hyperparams": null,
+    "combination": {
+      "imputation": "ffill",
+      "features": "mutual_info",
+      "scaler": "standard",
+      "feature_engineering": "diff"
+    },
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference",
+    "model_path": "models\\E152_ARIMA.pkl",
+    "updated_at": "2026-06-11T04:01:52.065409",
+    "note": "experiment_id mengacu pada grid lama 336 kombinasi (7 strategi FE, sebelum policy_reaction ditambahkan); pada grid 384 saat ini ID tersebut memetakan kombinasi lain. Acuan yang berlaku adalah dict combination/label pada entri ini.",
+    "locked": true
+  },
+  "BiLSTM": {
+    "experiment_id": "E136",
+    "RMSE": 0.14626940904316335,
+    "MAPE": 2.01,
+    "R2": 0.8866816528498604,
+    "source_phase": "tuning",
+    "hyperparams": {
+      "units": 128,
+      "dropout": 0.4682,
+      "sequence_length": 3,
+      "learning_rate": 0.001702,
+      "batch_size": 16,
+      "epochs": 100
+    },
+    "combination": {
+      "imputation": "ffill",
+      "features": "domain_itf",
+      "scaler": "minmax",
+      "feature_engineering": "policy_reaction"
+    },
+    "label": "Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi",
+    "model_path": "models/E136_tuned_BiLSTM_seed{42,43,44}.weights.h5",
+    "updated_at": "2026-07-11T00:00:00",
+    "note": "Metrik kanonis reprodusibel (generate_model_evaluations: split kanonis, NN = ensembel 3-seed terfreeze di models/*_seed{42,43,44}.weights.h5, RF/XGBoost retrain fresh deterministik). Entri re-run 27 Jun (RMSE 0.1351, tuning, 2026-06-27) tidak dipersistensi penuh sehingga tak reprodusibel; dipulihkan 11 Jul 2026.",
+    "locked": true
+  },
+  "LSTM": {
+    "experiment_id": "E144",
+    "RMSE": 0.16198842850053635,
+    "MAPE": 2.3,
+    "R2": 0.8610171534932389,
+    "source_phase": "tuning",
+    "hyperparams": {
+      "units": 32,
+      "dropout": 0.4924,
+      "sequence_length": 3,
+      "learning_rate": 0.009188,
+      "batch_size": 8,
+      "epochs": 100
+    },
+    "combination": {
+      "imputation": "ffill",
+      "features": "domain_itf",
+      "scaler": "robust",
+      "feature_engineering": "policy_reaction"
+    },
+    "label": "Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi",
+    "model_path": "models/E144_tuned_LSTM_seed{42,43,44}.weights.h5",
+    "updated_at": "2026-07-11T00:00:00",
+    "note": "Metrik kanonis reprodusibel (generate_model_evaluations: split kanonis, NN = ensembel 3-seed terfreeze di models/*_seed{42,43,44}.weights.h5, RF/XGBoost retrain fresh deterministik). Entri re-run 27 Jun (E160, RMSE 0.1189, focused, 2026-06-27) berasal dari ensembel yang tidak dipersistensi penuh sehingga tak reprodusibel; dipulihkan 11 Jul 2026.",
+    "locked": true
+  },
+  "RF": {
+    "experiment_id": "E136",
+    "RMSE": 0.1434,
+    "MAPE": 1.95,
+    "R2": 0.8911,
+    "source_phase": "tuning",
+    "hyperparams": "{'n_estimators': 50, 'max_depth_none': True, 'min_samples_split': 11, 'min_samples_leaf': 2, 'max_features': 1.0}",
+    "combination": {
+      "imputation": "ffill",
+      "features": "domain_itf",
+      "scaler": "minmax",
+      "feature_engineering": "policy_reaction"
+    },
+    "label": "Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi",
+    "model_path": "models\\E136_tuned_RF.pkl",
+    "updated_at": "2026-06-11T23:24:45.380444",
+    "note": "Metrik kanonis reprodusibel (split generate_model_evaluations; NN = ensembel 3-seed terfreeze). Lihat dl_variance_study untuk variansi.",
+    "locked": true
+  },
+  "VAR": {
+    "experiment_id": "E136",
+    "RMSE": 2.7089239818468327,
+    "MAPE": 38.902183070089066,
+    "R2": -37.86752206260912,
+    "source_phase": "focused",
+    "hyperparams": null,
+    "combination": {
+      "imputation": "ffill",
+      "features": "domain_itf",
+      "scaler": "minmax",
+      "feature_engineering": "policy_reaction"
+    },
+    "label": "Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi",
+    "model_path": "models\\E136_VAR.pkl",
+    "updated_at": "2026-06-11T21:53:35.936453",
+    "locked": true
+  },
+  "XGBoost": {
+    "experiment_id": "E112",
+    "RMSE": 0.2206925485654917,
+    "MAPE": 3.1834143106372745,
+    "R2": 0.74203038370958,
+    "source_phase": "focused",
+    "hyperparams": "default (DEFAULT_HYPERPARAMS['XGBoost'] + early stopping); hasil tuning ditolak karena degradasi pada data uji",
+    "combination": {
+      "imputation": "ffill",
+      "features": "all",
+      "scaler": "minmax",
+      "feature_engineering": "policy_reaction"
+    },
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi",
+    "model_path": "(retrain deterministik random_state=42 di generate_model_evaluations; tidak dimuat dari berkas)",
+    "updated_at": "2026-07-31T00:00:00",
+    "note": "Metrik kanonis reprodusibel (generate_model_evaluations: split kanonis, NN = ensembel 3-seed terfreeze di models/*_seed{42,43,44}.weights.h5, RF/XGBoost retrain fresh deterministik). SEJAK 31 Jul 2026 angka XGBoost dihasilkan pada macOS (0,2207); angka Windows sebelumnya 0,1960 / MAPE 2,8779 / R2 0,7965 -- XGBoost tidak portabel antar-OS (algoritma hist + subsampling), sedangkan RF/LSTM/BiLSTM reprodusibel lintas OS. Konfigurasi E112 dipertahankan sebagai kanonis meskipun pada macOS bukan lagi kombinasi XGBoost terbaik pada screening, karena narasi LLM dan penilaian domain expert (Lampiran E) dihasilkan dari konfigurasi ini. Entri re-run 27 Jun (E136 tuning, RMSE 0.1923) menyalahi keputusan Fase 4 (tuning XGBoost overfit terhadap validasi); dipulihkan 11 Jul 2026.",
+    "locked": true
+  }
+}

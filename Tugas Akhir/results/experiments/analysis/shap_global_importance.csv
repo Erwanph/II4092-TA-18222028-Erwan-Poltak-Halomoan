@@ -1,0 +1,18 @@
+feature,mean_abs_shap,feature_display
+BI_Rate_Pct_lag1,0.9611146682349355,BI-Rate t-1 (Persistensi)
+Credit_Growth_YoY_Pct,0.030741316596083375,Pertumbuhan Kredit YoY (%)
+BI_Rate_Pct_lag2,0.021772894859359532,BI-Rate t-2
+BI_Rate_Pct_lag3,0.01078888307603849,BI-Rate t-3
+Inflation_Gap_Pct,0.009705023158621099,Inflation Gap (%)
+policy_regime,0.0088858843796148,Arah Kebijakan Suku Bunga (Mengetat/Melonggar)
+output_gap,0.006854611845584057,Output Gap
+USD_IDR_Monthly_Avg,0.006836023611161,Kurs USD/IDR (Rata-rata Bulanan)
+Inflation_YoY_Pct,0.005128286053709336,Inflasi Year-on-Year (%)
+real_rate,0.004443171791426573,Suku Bunga Riil
+fx_pressure_3,0.004138504563110753,Tekanan Nilai Tukar (3 Bulan)
+Federal_Funds_Rate_Pct,0.00388931239967991,Federal Funds Rate (%)
+infl_momentum_3,0.003834717842720728,Momentum Inflasi (3 Bulan)
+ffr_change,0.0036193013338697583,Perubahan Federal Funds Rate
+M2_Triliun_Rp,0.0021981849499865627,"M2, Jumlah Uang Beredar (Triliun Rp)"
+GDP_Growth_YoY_Pct,0.001412534344843177,Pertumbuhan PDB YoY (%)
+fed_cycle,0.0004880536435956242,Siklus The Fed

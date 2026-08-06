@@ -1,0 +1,13 @@
+kolom,variabel,n,korelasi,kekuatan
+Inflation_YoY_Pct,Inflasi YoY,246,0.8566576229129674,Sangat kuat (+)
+Inflation_Gap_Pct,Inflation Gap,246,0.725420872236486,Kuat (+)
+Credit_Growth_YoY_Pct,Pertumbuhan Kredit,246,0.580475321757945,Sedang (+)
+Federal_Funds_Rate_Pct,Federal Funds Rate,246,0.35609344503354984,Sedang (+)
+GDP_Growth_YoY_Pct,Pertumbuhan PDB,180,0.33799696919298805,Sedang (+)
+Oil_Price_Brent_USD_per_Bbl,Harga Minyak Brent,246,-0.002274063704800456,Tidak ada
+VIX_Volatility_Index,VIX,246,-0.07453893954462218,Sangat lemah ($-$)
+Gold_Price_USD_per_Oz,Harga Emas,246,-0.5814835692877283,Sedang ($-$)
+USD_IDR_Monthly_Avg,Kurs USD/IDR,246,-0.5872471469240705,Sedang ($-$)
+M2_Triliun_Rp,M2 (Uang Beredar),246,-0.6804698225782878,Kuat ($-$)
+IHSG_End_of_Month,IHSG,246,-0.7614664019943805,Kuat ($-$)
+Foreign_Reserves_Miliar_USD,Cadangan Devisa,246,-0.8189560840136019,Sangat kuat ($-$)

@@ -1,0 +1,3074 @@
+[
+  {
+    "id": "E001",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E002",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E003",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E004",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E005",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E006",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E007",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E008",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E009",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E010",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E011",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E012",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E013",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E014",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E015",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E016",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E017",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E018",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E019",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E020",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E021",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E022",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E023",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E024",
+    "imputation": "interpolate",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E025",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E026",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E027",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E028",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E029",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E030",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E031",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E032",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E033",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E034",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E035",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E036",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E037",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E038",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E039",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E040",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E041",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E042",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E043",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E044",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E045",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E046",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E047",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E048",
+    "imputation": "interpolate",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E049",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E050",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E051",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E052",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E053",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E054",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E055",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E056",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E057",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E058",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E059",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E060",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E061",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E062",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E063",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E064",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E065",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E066",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E067",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E068",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E069",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E070",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E071",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E072",
+    "imputation": "interpolate",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E073",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E074",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E075",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E076",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E077",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E078",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E079",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E080",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E081",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E082",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E083",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E084",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E085",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E086",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E087",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E088",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E089",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E090",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E091",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E092",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E093",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E094",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E095",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E096",
+    "imputation": "interpolate",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E097",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E098",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E099",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E100",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E101",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E102",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E103",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E104",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E105",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E106",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E107",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E108",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E109",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E110",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E111",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E112",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E113",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E114",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E115",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E116",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E117",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E118",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E119",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E120",
+    "imputation": "ffill",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E121",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E122",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E123",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E124",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E125",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E126",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E127",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E128",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E129",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E130",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E131",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E132",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E133",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E134",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E135",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E136",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E137",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E138",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E139",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E140",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E141",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E142",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E143",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E144",
+    "imputation": "ffill",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E145",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E146",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E147",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E148",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E149",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E150",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E151",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E152",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E153",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E154",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E155",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E156",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E157",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E158",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E159",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E160",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E161",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E162",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E163",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E164",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E165",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E166",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E167",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E168",
+    "imputation": "ffill",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E169",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E170",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E171",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E172",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E173",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E174",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E175",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E176",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E177",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E178",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E179",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E180",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E181",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E182",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E183",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E184",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E185",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E186",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E187",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E188",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E189",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E190",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E191",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E192",
+    "imputation": "ffill",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E193",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E194",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E195",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E196",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E197",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E198",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E199",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E200",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E201",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E202",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E203",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E204",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E205",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E206",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E207",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E208",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E209",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E210",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E211",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E212",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E213",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E214",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E215",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E216",
+    "imputation": "mean",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E217",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E218",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E219",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E220",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E221",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E222",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E223",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E224",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E225",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E226",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E227",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E228",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E229",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E230",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E231",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E232",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E233",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E234",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E235",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E236",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E237",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E238",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E239",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E240",
+    "imputation": "mean",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E241",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E242",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E243",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E244",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E245",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E246",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E247",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E248",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E249",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E250",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E251",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E252",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E253",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E254",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E255",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E256",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E257",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E258",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E259",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E260",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E261",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E262",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E263",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E264",
+    "imputation": "mean",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E265",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E266",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E267",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E268",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E269",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E270",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E271",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E272",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E273",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E274",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E275",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E276",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E277",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E278",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E279",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E280",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E281",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E282",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E283",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E284",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E285",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E286",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E287",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E288",
+    "imputation": "mean",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E289",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E290",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E291",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E292",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E293",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E294",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E295",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E296",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E297",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E298",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E299",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E300",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E301",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E302",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E303",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E304",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E305",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E306",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E307",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E308",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E309",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E310",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E311",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E312",
+    "imputation": "knn",
+    "features": "all",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E313",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E314",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E315",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E316",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E317",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E318",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E319",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E320",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E321",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E322",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E323",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E324",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E325",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E326",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E327",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E328",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E329",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E330",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E331",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E332",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E333",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E334",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E335",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E336",
+    "imputation": "knn",
+    "features": "domain_itf",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Domain Expert \u2014 ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E337",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E338",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E339",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E340",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E341",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E342",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E343",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E344",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E345",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E346",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E347",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E348",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E349",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E350",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E351",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E352",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E353",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E354",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E355",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E356",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E357",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E358",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E359",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E360",
+    "imputation": "knn",
+    "features": "corr_top6",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E361",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E362",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E363",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E364",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E365",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference"
+  },
+  {
+    "id": "E366",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E367",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E368",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "standard",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E369",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E370",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E371",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E372",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E373",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+  },
+  {
+    "id": "E374",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E375",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E376",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "minmax",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  },
+  {
+    "id": "E377",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "none",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering"
+  },
+  {
+    "id": "E378",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+  },
+  {
+    "id": "E379",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+  },
+  {
+    "id": "E380",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "lag_rolling",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+  },
+  {
+    "id": "E381",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "diff",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + First Difference"
+  },
+  {
+    "id": "E382",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "interaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi"
+  },
+  {
+    "id": "E383",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "calendar",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+  },
+  {
+    "id": "E384",
+    "imputation": "knn",
+    "features": "mutual_info",
+    "scaler": "robust",
+    "feature_engineering": "policy_reaction",
+    "label": "KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+  }
+]

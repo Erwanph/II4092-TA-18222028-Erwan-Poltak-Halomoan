@@ -1,0 +1,177 @@
+{
+  "marginal_tables": {
+    "imputation": {
+      "mean": {
+        "ffill": 0.842985817898927,
+        "interpolate": 1.2482265277421087,
+        "mean": 1.2487659466462107,
+        "knn": 1.2704735192288872
+      },
+      "std": {
+        "ffill": 0.5578973123560803,
+        "interpolate": 0.4174934501486202,
+        "mean": 0.43769859277147,
+        "knn": 0.4483628701503125
+      },
+      "min": {
+        "ffill": 0.1934243323986154,
+        "interpolate": 0.7152762722676962,
+        "mean": 0.6833208253514003,
+        "knn": 0.7230044301671403
+      },
+      "max": {
+        "ffill": 2.4030337568516753,
+        "interpolate": 2.3132127309869803,
+        "mean": 2.451394173729309,
+        "knn": 2.415308186649212
+      },
+      "count": {
+        "ffill": 192,
+        "interpolate": 192,
+        "mean": 192,
+        "knn": 192
+      }
+    },
+    "features": {
+      "mean": {
+        "mutual_info": 0.9397578591921305,
+        "all": 0.9448132487638272,
+        "domain_itf": 1.0969033513179252,
+        "corr_top6": 1.6289773522422506
+      },
+      "std": {
+        "mutual_info": 0.2472817843978142,
+        "all": 0.23745011470415586,
+        "domain_itf": 0.338453294534398,
+        "corr_top6": 0.6743249790302661
+      },
+      "min": {
+        "mutual_info": 0.2001609862717029,
+        "all": 0.2206925485654917,
+        "domain_itf": 0.1934243323986154,
+        "corr_top6": 0.206721579010065
+      },
+      "max": {
+        "mutual_info": 1.2175578268815195,
+        "all": 1.2116379610198469,
+        "domain_itf": 1.6777936163075973,
+        "corr_top6": 2.451394173729309
+      },
+      "count": {
+        "mutual_info": 192,
+        "all": 192,
+        "domain_itf": 192,
+        "corr_top6": 192
+      }
+    },
+    "scaler": {
+      "mean": {
+        "robust": 1.1520962231565428,
+        "minmax": 1.152696632816554,
+        "standard": 1.1530460026640035
+      },
+      "std": {
+        "robust": 0.5017998868210866,
+        "minmax": 0.5014724302461125,
+        "standard": 0.5009670476743395
+      },
+      "min": {
+        "robust": 0.1934243323986154,
+        "minmax": 0.19404083961549454,
+        "standard": 0.19404083961549454
+      },
+      "max": {
+        "robust": 2.451394173729309,
+        "minmax": 2.451394173729309,
+        "standard": 2.451394173729309
+      },
+      "count": {
+        "robust": 256,
+        "minmax": 256,
+        "standard": 256
+      }
+    },
+    "feature_engineering": {
+      "mean": {
+        "policy_reaction": 0.7554316851562638,
+        "rolling": 1.013974747377102,
+        "lag_rolling": 1.0235800877560575,
+        "lag": 1.0901786949474377,
+        "diff": 1.131134654819533,
+        "none": 1.3455151934296543,
+        "calendar": 1.361207706289534,
+        "interaction": 1.499880853256685
+      },
+      "std": {
+        "policy_reaction": 0.35685284838627596,
+        "rolling": 0.0782362612577294,
+        "lag_rolling": 0.4102487471351244,
+        "lag": 0.48678596495724097,
+        "diff": 0.6081121241329641,
+        "none": 0.4660123261878635,
+        "calendar": 0.4551289410593171,
+        "interaction": 0.5368540666075797
+      },
+      "min": {
+        "policy_reaction": 0.1934243323986154,
+        "rolling": 0.8830019289679298,
+        "lag_rolling": 0.38596251347313704,
+        "lag": 0.40186768320625893,
+        "diff": 0.3652150830017354,
+        "none": 0.8919779518119068,
+        "calendar": 0.8910458117546193,
+        "interaction": 1.046716143372607
+      },
+      "max": {
+        "policy_reaction": 1.2116379610198469,
+        "rolling": 1.127483838598471,
+        "lag_rolling": 1.773330710193221,
+        "lag": 1.990417282977789,
+        "diff": 2.360496511164572,
+        "none": 2.2846834062504704,
+        "calendar": 2.3848229617495966,
+        "interaction": 2.451394173729309
+      },
+      "count": {
+        "policy_reaction": 96,
+        "rolling": 96,
+        "lag_rolling": 96,
+        "lag": 96,
+        "diff": 96,
+        "none": 96,
+        "calendar": 96,
+        "interaction": 96
+      }
+    }
+  },
+  "importance": {
+    "imputation": {
+      "range": 0.42748770132996017,
+      "best_level": "ffill",
+      "worst_level": "knn",
+      "best_mean": 0.842985817898927,
+      "worst_mean": 1.2704735192288872
+    },
+    "features": {
+      "range": 0.6892194930501201,
+      "best_level": "mutual_info",
+      "worst_level": "corr_top6",
+      "best_mean": 0.9397578591921305,
+      "worst_mean": 1.6289773522422506
+    },
+    "scaler": {
+      "range": 0.0009497795074606685,
+      "best_level": "robust",
+      "worst_level": "standard",
+      "best_mean": 1.1520962231565428,
+      "worst_mean": 1.1530460026640035
+    },
+    "feature_engineering": {
+      "range": 0.7444491681004212,
+      "best_level": "policy_reaction",
+      "worst_level": "interaction",
+      "best_mean": 0.7554316851562638,
+      "worst_mean": 1.499880853256685
+    }
+  }
+}

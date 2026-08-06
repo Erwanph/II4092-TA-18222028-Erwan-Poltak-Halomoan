@@ -1,0 +1,6 @@
+{
+  "RMSE": 1.050106244081411,
+  "MAPE": 19.431356354218035,
+  "R2": -0.194554501133398,
+  "model_path": "models/BASELINE_XGBoost.pkl"
+}

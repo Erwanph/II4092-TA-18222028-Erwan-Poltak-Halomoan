@@ -1,0 +1,33 @@
+{
+  "n_kombinasi": 384,
+  "korelasi_spearman_rank": 0.529951474234056,
+  "juara_uji": {
+    "experiment_id": "E136",
+    "RMSE_uji": 0.20001312870262225,
+    "RMSE_val": 1.1353507867222776,
+    "rank_val": 112
+  },
+  "juara_val": {
+    "experiment_id": "E280",
+    "RMSE_uji": 0.9159273406565374,
+    "RMSE_val": 0.8494311689819926,
+    "rank_uji": 62
+  },
+  "kanonis": {
+    "E136": {
+      "model": "RF, BiLSTM",
+      "RMSE_uji": 0.20001312870262225,
+      "RMSE_val": 1.1353507867222776,
+      "rank_uji": 1,
+      "rank_val": 112
+    },
+    "E112": {
+      "model": "XGBoost",
+      "RMSE_uji": 0.22468332132910665,
+      "RMSE_val": 1.1120503809721807,
+      "rank_uji": 8,
+      "rank_val": 95
+    }
+  },
+  "selisih_rmse_uji_juara": 0.7159142119539151
+}

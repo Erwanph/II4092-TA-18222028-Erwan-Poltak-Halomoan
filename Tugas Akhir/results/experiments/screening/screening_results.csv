@@ -1,0 +1,769 @@
+experiment_id,imputation,features,scaler,feature_engineering,model,RMSE,MAPE,R2,model_path,label
+E001,interpolate,all,standard,none,RF,0.9919561831086041,18.086428375252627,-0.06591964166000319,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E001,interpolate,all,standard,none,XGBoost,1.050106244081411,19.431356354218035,-0.194554501133398,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E002,interpolate,all,standard,lag,RF,1.0739057302139847,18.248939730600764,-0.38541646120290074,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E002,interpolate,all,standard,lag,XGBoost,1.0210624507281325,17.339495201597558,-0.252427615171563,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E003,interpolate,all,standard,rolling,RF,0.9055556878932315,16.70825863466932,0.06814426768940107,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E003,interpolate,all,standard,rolling,XGBoost,1.0838906797059866,19.470875994719485,-0.3350247564735096,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E004,interpolate,all,standard,lag_rolling,RF,0.9547008351092782,16.363817368013283,-0.03574527438897501,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E004,interpolate,all,standard,lag_rolling,XGBoost,1.0464577809774478,18.44401428998957,-0.24440508954441387,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E005,interpolate,all,standard,diff,RF,0.9438808967224184,17.055304933114552,-0.01240142669170563,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E005,interpolate,all,standard,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E006,interpolate,all,standard,interaction,RF,1.1247827066106462,18.703164323204938,-0.3704927686828663,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E006,interpolate,all,standard,interaction,XGBoost,1.0904042392013074,19.996747852203665,-0.2879961054767033,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E007,interpolate,all,standard,calendar,RF,1.0381043399157652,18.230934414920487,-0.16740486992763337,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E007,interpolate,all,standard,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E008,interpolate,all,standard,policy_reaction,RF,0.7583871314959638,13.727567613199476,0.3090765476102165,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E008,interpolate,all,standard,policy_reaction,XGBoost,1.2116379610198469,22.35785440763527,-0.7635743229058825,,Interpolasi Linear + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E009,interpolate,all,minmax,none,RF,0.9919528194799759,18.086283447716397,-0.06591241280896254,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E009,interpolate,all,minmax,none,XGBoost,1.050106244081411,19.431356354218035,-0.194554501133398,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E010,interpolate,all,minmax,lag,RF,1.0740187371014798,18.251947526137734,-0.3857080507442041,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E010,interpolate,all,minmax,lag,XGBoost,1.0210624507281325,17.339495201597558,-0.252427615171563,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E011,interpolate,all,minmax,rolling,RF,0.9049058877142561,16.699485284059236,0.06948113250739318,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E011,interpolate,all,minmax,rolling,XGBoost,1.0838906797059866,19.470875994719485,-0.3350247564735096,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E012,interpolate,all,minmax,lag_rolling,RF,0.9547825934894126,16.36530062177027,-0.03592267966335716,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E012,interpolate,all,minmax,lag_rolling,XGBoost,1.0464577809774478,18.44401428998957,-0.24440508954441387,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E013,interpolate,all,minmax,diff,RF,0.9428968405472467,17.0425687275212,-0.010291540694771673,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E013,interpolate,all,minmax,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E014,interpolate,all,minmax,interaction,RF,1.1247827682774645,18.70364741499238,-0.3704929189588799,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E014,interpolate,all,minmax,interaction,XGBoost,1.0904042392013074,19.996747852203665,-0.2879961054767033,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E015,interpolate,all,minmax,calendar,RF,1.0380565220941655,18.230786423878662,-0.16729732491508154,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E015,interpolate,all,minmax,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E016,interpolate,all,minmax,policy_reaction,RF,0.7611163440057789,13.800510957437872,0.3040947385846964,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E016,interpolate,all,minmax,policy_reaction,XGBoost,1.2116379610198469,22.35785440763527,-0.7635743229058825,,"Interpolasi Linear + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E017,interpolate,all,robust,none,RF,0.9914099482518896,18.0801584477164,-0.06474603709444993,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E017,interpolate,all,robust,none,XGBoost,1.050106244081411,19.431356354218035,-0.194554501133398,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E018,interpolate,all,robust,lag,RF,1.0731526920933923,18.23276297001557,-0.3834741945767097,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E018,interpolate,all,robust,lag,XGBoost,1.0210624507281325,17.339495201597558,-0.252427615171563,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E019,interpolate,all,robust,rolling,RF,0.9049029504630913,16.69984971554611,0.06948717327523113,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E019,interpolate,all,robust,rolling,XGBoost,1.0838906797059866,19.470875994719485,-0.3350247564735096,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E020,interpolate,all,robust,lag_rolling,RF,0.9547082123299035,16.362529534039112,-0.03576128139481738,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E020,interpolate,all,robust,lag_rolling,XGBoost,1.0464577809774478,18.44401428998957,-0.24440508954441387,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E021,interpolate,all,robust,diff,RF,0.942836012307905,17.04064128987948,-0.010161192875734582,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E021,interpolate,all,robust,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E022,interpolate,all,robust,interaction,RF,1.1247967704286574,18.705036303881265,-0.37052704104724477,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E022,interpolate,all,robust,interaction,XGBoost,1.0904042392013074,19.996747852203665,-0.2879961054767033,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E023,interpolate,all,robust,calendar,RF,1.038219384042733,18.239110236418675,-0.16766363103812765,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E023,interpolate,all,robust,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E024,interpolate,all,robust,policy_reaction,RF,0.7436324274371736,13.511726941226488,0.3356993712456313,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E024,interpolate,all,robust,policy_reaction,XGBoost,1.2116379610198469,22.35785440763527,-0.7635743229058825,,Interpolasi Linear + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E025,interpolate,domain_itf,standard,none,RF,1.3172226015613546,24.083281021778408,-0.8795671031161141,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E025,interpolate,domain_itf,standard,none,XGBoost,1.1114717538394463,17.70569287264013,-0.33824721417244086,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E026,interpolate,domain_itf,standard,lag,RF,1.538792235163028,29.802193838701683,-1.8445134813138884,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E026,interpolate,domain_itf,standard,lag,XGBoost,0.9597639238823777,14.960889145114429,-0.10656484020275503,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E027,interpolate,domain_itf,standard,rolling,RF,0.9684520799943694,16.818260686014664,-0.06579733037697677,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E027,interpolate,domain_itf,standard,rolling,XGBoost,1.0692316748246986,19.22679222449468,-0.299158045341386,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E028,interpolate,domain_itf,standard,lag_rolling,RF,1.49133119952516,29.45494941512147,-1.5273568293305764,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E028,interpolate,domain_itf,standard,lag_rolling,XGBoost,1.123322786374506,19.28947465332453,-0.4339284869261224,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E029,interpolate,domain_itf,standard,diff,RF,1.271714979449779,21.730730671558888,-0.8377986546698886,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E029,interpolate,domain_itf,standard,diff,XGBoost,0.9824747990634046,16.117536871886813,-0.09688524434148738,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E030,interpolate,domain_itf,standard,interaction,RF,1.6106887851203302,31.040586504581423,-1.8103651862016568,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E030,interpolate,domain_itf,standard,interaction,XGBoost,1.197345504098686,20.598425674726784,-0.5530250574790374,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E031,interpolate,domain_itf,standard,calendar,RF,1.2519060456656854,22.309012205082546,-0.6977860497487263,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E031,interpolate,domain_itf,standard,calendar,XGBoost,1.127348515263064,18.620747045943748,-0.3767525252439645,,"Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E032,interpolate,domain_itf,standard,policy_reaction,RF,0.7399586324689454,13.166228426562968,0.34224689596440006,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E032,interpolate,domain_itf,standard,policy_reaction,XGBoost,1.1701245714488093,21.85218254484177,-0.6447966866906929,,Interpolasi Linear + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E033,interpolate,domain_itf,minmax,none,RF,1.3172335940327238,24.083928364773577,-0.8795984739318794,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E033,interpolate,domain_itf,minmax,none,XGBoost,1.1114717538394463,17.70569287264013,-0.33824721417244086,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E034,interpolate,domain_itf,minmax,lag,RF,1.539068558679289,29.806207950522307,-1.8455351612021205,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E034,interpolate,domain_itf,minmax,lag,XGBoost,0.9597639238823777,14.960889145114429,-0.10656484020275503,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E035,interpolate,domain_itf,minmax,rolling,RF,0.9685217162706888,16.82213445774558,-0.06595060760617533,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E035,interpolate,domain_itf,minmax,rolling,XGBoost,1.0692316748246986,19.22679222449468,-0.299158045341386,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E036,interpolate,domain_itf,minmax,lag_rolling,RF,1.4913592929667376,29.45410945149314,-1.5274520500571556,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E036,interpolate,domain_itf,minmax,lag_rolling,XGBoost,1.123322786374506,19.28947465332453,-0.4339284869261224,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E037,interpolate,domain_itf,minmax,diff,RF,1.2710802323223285,21.728612508903897,-0.835964523106385,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E037,interpolate,domain_itf,minmax,diff,XGBoost,0.9824747990634046,16.117536871886813,-0.09688524434148738,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E038,interpolate,domain_itf,minmax,interaction,RF,1.6106887851203302,31.040586504581423,-1.8103651862016577,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E038,interpolate,domain_itf,minmax,interaction,XGBoost,1.197345504098686,20.598425674726784,-0.5530250574790374,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E039,interpolate,domain_itf,minmax,calendar,RF,1.2516485334444811,22.30096067529189,-0.6970876655639491,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E039,interpolate,domain_itf,minmax,calendar,XGBoost,1.127348515263064,18.620747045943748,-0.3767525252439645,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E040,interpolate,domain_itf,minmax,policy_reaction,RF,0.7413472225959886,13.19508912204412,0.3397759295834135,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E040,interpolate,domain_itf,minmax,policy_reaction,XGBoost,1.1701245714488093,21.85218254484177,-0.6447966866906929,,"Interpolasi Linear + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E041,interpolate,domain_itf,robust,none,RF,1.316838266792688,24.076543444138657,-0.8784704356285116,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E041,interpolate,domain_itf,robust,none,XGBoost,1.1114717538394463,17.70569287264013,-0.33824721417244086,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E042,interpolate,domain_itf,robust,lag,RF,1.5391850731893506,29.81002849188928,-1.8459660174925405,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E042,interpolate,domain_itf,robust,lag,XGBoost,0.9597639238823777,14.960889145114429,-0.10656484020275503,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E043,interpolate,domain_itf,robust,rolling,RF,0.9684970470506492,16.821331358728195,-0.06589630663438761,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E043,interpolate,domain_itf,robust,rolling,XGBoost,1.0692316748246986,19.22679222449468,-0.299158045341386,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E044,interpolate,domain_itf,robust,lag_rolling,RF,1.4909477407710756,29.447228866584602,-1.5260573024294426,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E044,interpolate,domain_itf,robust,lag_rolling,XGBoost,1.123322786374506,19.28947465332453,-0.4339284869261224,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E045,interpolate,domain_itf,robust,diff,RF,1.2700043481192527,21.710158325988495,-0.8328577967104445,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E045,interpolate,domain_itf,robust,diff,XGBoost,0.9824747990634046,16.117536871886813,-0.09688524434148738,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E046,interpolate,domain_itf,robust,interaction,RF,1.6104886485446985,31.036112959607888,-1.8096668242018463,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E046,interpolate,domain_itf,robust,interaction,XGBoost,1.197345504098686,20.598425674726784,-0.5530250574790374,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E047,interpolate,domain_itf,robust,calendar,RF,1.25163413836649,22.300459168505597,-0.6970486297353291,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E047,interpolate,domain_itf,robust,calendar,XGBoost,1.127348515263064,18.620747045943748,-0.3767525252439645,,"Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E048,interpolate,domain_itf,robust,policy_reaction,RF,0.7208586551882608,12.722333376454845,0.3757647939254313,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E048,interpolate,domain_itf,robust,policy_reaction,XGBoost,1.1701245714488093,21.85218254484177,-0.6447966866906929,,Interpolasi Linear + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E049,interpolate,corr_top6,standard,none,RF,1.9447213693211263,38.54747501035551,-3.0968895916525234,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E049,interpolate,corr_top6,standard,none,XGBoost,2.200241906858588,43.734743541545214,-4.24421334997613,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E050,interpolate,corr_top6,standard,lag,RF,1.8855244215656757,36.9769418898398,-3.270830619514247,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E050,interpolate,corr_top6,standard,lag,XGBoost,1.8343617083020192,33.82720017136997,-3.042201661077253,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E051,interpolate,corr_top6,standard,rolling,RF,1.1010019179605501,19.37175151351931,-0.3775091954186105,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E051,interpolate,corr_top6,standard,rolling,XGBoost,0.9961349582207502,18.264904978972716,-0.1275990945179828,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E052,interpolate,corr_top6,standard,lag_rolling,RF,1.7681902322333218,35.08169256636654,-2.5528455636865193,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E052,interpolate,corr_top6,standard,lag_rolling,XGBoost,1.4140498385230598,25.48446138547057,-1.2722064518397191,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E053,interpolate,corr_top6,standard,diff,RF,2.102059388504139,41.109961148959975,-4.0212092378342055,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E053,interpolate,corr_top6,standard,diff,XGBoost,2.247363360252185,44.080274287990115,-4.739379573937212,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E054,interpolate,corr_top6,standard,interaction,RF,2.3130624621220006,46.27851008241674,-4.79581091799907,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E054,interpolate,corr_top6,standard,interaction,XGBoost,2.23555152201384,43.540231575401336,-4.4138828518113975,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E055,interpolate,corr_top6,standard,calendar,RF,1.9487983828369708,38.64924854643462,-3.1140854564094695,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E055,interpolate,corr_top6,standard,calendar,XGBoost,2.303332817142669,46.11686545946663,-4.747154574436161,,"Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E056,interpolate,corr_top6,standard,policy_reaction,RF,0.7212248428683475,11.070095768318836,0.37513042462125645,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E056,interpolate,corr_top6,standard,policy_reaction,XGBoost,1.0546724414368978,19.336097269519158,-0.33623616040970017,,Interpolasi Linear + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E057,interpolate,corr_top6,minmax,none,RF,1.944573514159919,38.544311587305124,-3.096266650748551,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E057,interpolate,corr_top6,minmax,none,XGBoost,2.200241906858588,43.734743541545214,-4.24421334997613,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E058,interpolate,corr_top6,minmax,lag,RF,1.8854318562025536,36.97394053744274,-3.270411297145693,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E058,interpolate,corr_top6,minmax,lag,XGBoost,1.8343617083020192,33.82720017136997,-3.042201661077253,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E059,interpolate,corr_top6,minmax,rolling,RF,1.1004235247087861,19.371415464048386,-0.3760622719714857,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E059,interpolate,corr_top6,minmax,rolling,XGBoost,0.9961349582207502,18.264904978972716,-0.1275990945179828,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E060,interpolate,corr_top6,minmax,lag_rolling,RF,1.768249455301332,35.08217307603073,-2.5530835628953303,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E060,interpolate,corr_top6,minmax,lag_rolling,XGBoost,1.4140498385230598,25.48446138547057,-1.2722064518397191,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E061,interpolate,corr_top6,minmax,diff,RF,2.1002489795680126,41.0759418696417,-4.012563880305141,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E061,interpolate,corr_top6,minmax,diff,XGBoost,2.247363360252185,44.080274287990115,-4.739379573937212,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E062,interpolate,corr_top6,minmax,interaction,RF,2.3132127309869803,46.28161084156098,-4.79656399599214,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E062,interpolate,corr_top6,minmax,interaction,XGBoost,2.23555152201384,43.540231575401336,-4.4138828518113975,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E063,interpolate,corr_top6,minmax,calendar,RF,1.9488360085962693,38.650059850560844,-3.1142443205431958,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E063,interpolate,corr_top6,minmax,calendar,XGBoost,2.303332817142669,46.11686545946663,-4.747154574436161,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E064,interpolate,corr_top6,minmax,policy_reaction,RF,0.7208801055877675,11.098826556682432,0.37572764297029493,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E064,interpolate,corr_top6,minmax,policy_reaction,XGBoost,1.0546724414368978,19.336097269519158,-0.33623616040970017,,"Interpolasi Linear + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E065,interpolate,corr_top6,robust,none,RF,1.9429924863287094,38.51265998850137,-3.089608451650447,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E065,interpolate,corr_top6,robust,none,XGBoost,2.200241906858588,43.734743541545214,-4.24421334997613,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E066,interpolate,corr_top6,robust,lag,RF,1.8850389098199243,36.972470052663326,-3.268631473808111,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E066,interpolate,corr_top6,robust,lag,XGBoost,1.8343617083020192,33.82720017136997,-3.042201661077253,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E067,interpolate,corr_top6,robust,rolling,RF,1.1000877691726565,19.358084745915097,-0.3752226860650707,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E067,interpolate,corr_top6,robust,rolling,XGBoost,0.9961349582207502,18.264904978972716,-0.1275990945179828,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E068,interpolate,corr_top6,robust,lag_rolling,RF,1.7682956030035215,35.08452022607087,-2.5532690217752645,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E068,interpolate,corr_top6,robust,lag_rolling,XGBoost,1.4140498385230598,25.48446138547057,-1.2722064518397191,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E069,interpolate,corr_top6,robust,diff,RF,2.1013270612755006,41.0886476013841,-4.01771121324991,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E069,interpolate,corr_top6,robust,diff,XGBoost,2.247363360252185,44.080274287990115,-4.739379573937212,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E070,interpolate,corr_top6,robust,interaction,RF,2.3131597345705353,46.28022195267209,-4.7962983969001245,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E070,interpolate,corr_top6,robust,interaction,XGBoost,2.23555152201384,43.540231575401336,-4.4138828518113975,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E071,interpolate,corr_top6,robust,calendar,RF,1.9473398006878744,38.615947937359415,-3.1079293696336787,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E071,interpolate,corr_top6,robust,calendar,XGBoost,2.303332817142669,46.11686545946663,-4.747154574436161,,"Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E072,interpolate,corr_top6,robust,policy_reaction,RF,0.7152762722676962,10.779293832588067,0.38539560563273256,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E072,interpolate,corr_top6,robust,policy_reaction,XGBoost,1.0546724414368978,19.336097269519158,-0.33623616040970017,,Interpolasi Linear + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E073,interpolate,mutual_info,standard,none,RF,0.9247748642076773,17.435947138306467,0.07357232284866311,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E073,interpolate,mutual_info,standard,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E074,interpolate,mutual_info,standard,lag,RF,0.9945349711097796,16.473989224166584,-0.1881961530987326,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E074,interpolate,mutual_info,standard,lag,XGBoost,1.0562344339549379,17.706362569248167,-0.3401970801987746,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E075,interpolate,mutual_info,standard,rolling,RF,0.9149151954398104,16.54871982983059,0.04878205031208849,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E075,interpolate,mutual_info,standard,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E076,interpolate,mutual_info,standard,lag_rolling,RF,0.881252037485601,15.29255955470823,0.11749205526705175,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E076,interpolate,mutual_info,standard,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E077,interpolate,mutual_info,standard,diff,RF,0.9225854713930357,16.66042458552967,0.03276594743501193,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E077,interpolate,mutual_info,standard,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E078,interpolate,mutual_info,standard,interaction,RF,1.0784290139897557,19.781725796443173,-0.25986094864175113,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E078,interpolate,mutual_info,standard,interaction,XGBoost,1.1828232863963777,21.868217654082997,-0.5155812342223722,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E079,interpolate,mutual_info,standard,calendar,RF,0.9834717144293209,18.543344895704728,-0.047763426494296546,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E079,interpolate,mutual_info,standard,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E080,interpolate,mutual_info,standard,policy_reaction,RF,0.7690188268551164,14.063870441700502,0.2895688943165483,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E080,interpolate,mutual_info,standard,policy_reaction,XGBoost,1.0729746925877073,19.349298616978725,-0.3830152900765589,,Interpolasi Linear + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E081,interpolate,mutual_info,minmax,none,RF,0.9248533272948511,17.438096896760573,0.07341510953732489,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E081,interpolate,mutual_info,minmax,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E082,interpolate,mutual_info,minmax,lag,RF,0.9937625638004536,16.462988677812778,-0.18635124060023922,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E082,interpolate,mutual_info,minmax,lag,XGBoost,1.0562344339549379,17.706362569248167,-0.3401970801987746,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E083,interpolate,mutual_info,minmax,rolling,RF,0.9149634492284565,16.549759134441324,0.04868171078217787,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E083,interpolate,mutual_info,minmax,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E084,interpolate,mutual_info,minmax,lag_rolling,RF,0.881252037485601,15.292559554708227,0.11749205526705175,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E084,interpolate,mutual_info,minmax,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E085,interpolate,mutual_info,minmax,diff,RF,0.9226573936180489,16.663201342363543,0.03261513574569219,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E085,interpolate,mutual_info,minmax,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E086,interpolate,mutual_info,minmax,interaction,RF,1.0784290139897557,19.781725796443173,-0.25986094864175113,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E086,interpolate,mutual_info,minmax,interaction,XGBoost,1.1828232863963777,21.868217654082997,-0.5155812342223722,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E087,interpolate,mutual_info,minmax,calendar,RF,0.9835570682906669,18.542941422044734,-0.047945301648781635,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E087,interpolate,mutual_info,minmax,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E088,interpolate,mutual_info,minmax,policy_reaction,RF,0.7702873024528949,14.102294490300537,0.28722328790711726,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E088,interpolate,mutual_info,minmax,policy_reaction,XGBoost,1.0729746925877073,19.349298616978725,-0.3830152900765589,,"Interpolasi Linear + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E089,interpolate,mutual_info,robust,none,RF,0.9248533272948511,17.438096896760573,0.07341510953732489,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E089,interpolate,mutual_info,robust,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E090,interpolate,mutual_info,robust,lag,RF,0.9943557377714858,16.46608348962088,-0.18776792245984564,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E090,interpolate,mutual_info,robust,lag,XGBoost,1.0562344339549379,17.706362569248167,-0.3401970801987746,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E091,interpolate,mutual_info,robust,rolling,RF,0.9152290303723911,16.554375266608474,0.04812936332468043,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E091,interpolate,mutual_info,robust,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E092,interpolate,mutual_info,robust,lag_rolling,RF,0.881196632735695,15.289362005847412,0.11760301919759086,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E092,interpolate,mutual_info,robust,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E093,interpolate,mutual_info,robust,diff,RF,0.922656011112846,16.662582913173686,0.032618034792760375,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E093,interpolate,mutual_info,robust,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E094,interpolate,mutual_info,robust,interaction,RF,1.0784290139897557,19.781725796443173,-0.25986094864175113,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E094,interpolate,mutual_info,robust,interaction,XGBoost,1.1828232863963777,21.868217654082997,-0.5155812342223722,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E095,interpolate,mutual_info,robust,calendar,RF,0.9835707688783565,18.54190689039281,-0.04797449683624766,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E095,interpolate,mutual_info,robust,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E096,interpolate,mutual_info,robust,policy_reaction,RF,0.7431900986827013,13.683098709271652,0.33648941715508063,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E096,interpolate,mutual_info,robust,policy_reaction,XGBoost,1.0729746925877073,19.349298616978725,-0.3830152900765589,,Interpolasi Linear + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E097,ffill,all,standard,none,RF,0.9920488357534657,17.99166374049366,-0.06611877321035253,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E097,ffill,all,standard,none,XGBoost,1.0755533829628217,19.872576138912134,-0.2531510679515452,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E098,ffill,all,standard,lag,RF,0.42996809609768666,6.353791442147745,0.04795001372237462,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E098,ffill,all,standard,lag,XGBoost,0.4541269429688911,7.0740749322726435,-0.06204232645120911,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E099,ffill,all,standard,rolling,RF,0.9103611714057681,16.774429434477483,0.05822792771447405,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E099,ffill,all,standard,rolling,XGBoost,1.062625502571123,19.138588589199067,-0.2831541259533059,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E100,ffill,all,standard,lag_rolling,RF,0.3910273714305781,5.703808467379289,0.19014450207122202,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E100,ffill,all,standard,lag_rolling,XGBoost,0.44733693091327265,5.734506654221198,-0.05989471210234387,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E101,ffill,all,standard,diff,RF,0.40593508542015055,6.486827728380365,0.1272167623058631,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E101,ffill,all,standard,diff,XGBoost,0.37505329131125453,5.075621738495539,0.25496070361120793,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E102,ffill,all,standard,interaction,RF,1.0669923568828306,18.36896532160676,-0.23328118038876355,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E102,ffill,all,standard,interaction,XGBoost,1.0468395396946713,19.39716170018239,-0.18713394379759096,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E103,ffill,all,standard,calendar,RF,1.0231478275141688,18.020063868024128,-0.13400837042325042,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E103,ffill,all,standard,calendar,XGBoost,1.0961790886085576,20.225502611837552,-0.30167484826289837,,"Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E104,ffill,all,standard,policy_reaction,RF,0.2499023844199337,3.8067667243715215,0.6692239797560409,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E104,ffill,all,standard,policy_reaction,XGBoost,0.2206925485654917,3.1834143106372745,0.74203038370958,,Forward Fill + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E105,ffill,all,minmax,none,RF,0.9920349120495477,17.99103572116999,-0.06608884682481109,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E105,ffill,all,minmax,none,XGBoost,1.0755533829628217,19.872576138912134,-0.2531510679515452,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E106,ffill,all,minmax,lag,RF,0.43051317910074544,6.3585274223674455,0.04553460098874462,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E106,ffill,all,minmax,lag,XGBoost,0.4541269429688911,7.0740749322726435,-0.06204232645120911,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E107,ffill,all,minmax,rolling,RF,0.9096732977905178,16.765415829035298,0.05965060572911529,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E107,ffill,all,minmax,rolling,XGBoost,1.062625502571123,19.138588589199067,-0.2831541259533059,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E108,ffill,all,minmax,lag_rolling,RF,0.3910043363368998,5.701649193480883,0.19023991507371552,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E108,ffill,all,minmax,lag_rolling,XGBoost,0.44733693091327265,5.734506654221198,-0.05989471210234387,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E109,ffill,all,minmax,diff,RF,0.40590720701213023,6.486208207893694,0.12733663847606724,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E109,ffill,all,minmax,diff,XGBoost,0.37505329131125453,5.075621738495539,0.25496070361120793,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E110,ffill,all,minmax,interaction,RF,1.0669923568828303,18.368965321606755,-0.2332811803887631,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E110,ffill,all,minmax,interaction,XGBoost,1.0468395396946713,19.39716170018239,-0.18713394379759096,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E111,ffill,all,minmax,calendar,RF,1.023075533502388,18.019723860104353,-0.13384812159912873,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E111,ffill,all,minmax,calendar,XGBoost,1.0961790886085576,20.225502611837552,-0.30167484826289837,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E112,ffill,all,minmax,policy_reaction,RF,0.2286740940927216,3.530160902347145,0.7230335577557969,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E112,ffill,all,minmax,policy_reaction,XGBoost,0.2206925485654917,3.1834143106372745,0.74203038370958,,"Forward Fill + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E113,ffill,all,robust,none,RF,0.9920349120495479,17.99103572116999,-0.06608884682481131,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E113,ffill,all,robust,none,XGBoost,1.0755533829628217,19.872576138912134,-0.2531510679515452,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E114,ffill,all,robust,lag,RF,0.42556933233333777,6.315102921216474,0.06733015506994211,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E114,ffill,all,robust,lag,XGBoost,0.4541269429688911,7.0740749322726435,-0.06204232645120911,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E115,ffill,all,robust,rolling,RF,0.9096732977905178,16.765415829035305,0.05965060572911529,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E115,ffill,all,robust,rolling,XGBoost,1.062625502571123,19.138588589199067,-0.2831541259533059,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E116,ffill,all,robust,lag_rolling,RF,0.39111963825347995,5.706353421753953,0.1897622699562389,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E116,ffill,all,robust,lag_rolling,XGBoost,0.44733693091327265,5.734506654221198,-0.05989471210234387,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E117,ffill,all,robust,diff,RF,0.40593508542015055,6.486827728380365,0.1272167623058631,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E117,ffill,all,robust,diff,XGBoost,0.37505329131125453,5.075621738495539,0.25496070361120793,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E118,ffill,all,robust,interaction,RF,1.0669923568828303,18.368965321606755,-0.23328118038876333,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E118,ffill,all,robust,interaction,XGBoost,1.0468395396946713,19.39716170018239,-0.18713394379759096,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E119,ffill,all,robust,calendar,RF,1.023063145196305,18.019125220901266,-0.13382066248769742,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E119,ffill,all,robust,calendar,XGBoost,1.0961790886085576,20.225502611837552,-0.30167484826289837,,"Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E120,ffill,all,robust,policy_reaction,RF,0.25067017814235104,3.831563171425985,0.667188321757124,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E120,ffill,all,robust,policy_reaction,XGBoost,0.22089231187719738,3.1906823723122644,0.7415631618836143,,Forward Fill + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E121,ffill,domain_itf,standard,none,RF,1.3271734334693892,24.25074347614014,-0.908072387279,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E121,ffill,domain_itf,standard,none,XGBoost,1.116414816994512,17.8752848902771,-0.3501768921921622,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E122,ffill,domain_itf,standard,lag,RF,0.43737518230613237,6.498616248572684,0.014865427769962913,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E122,ffill,domain_itf,standard,lag,XGBoost,0.5264331415395779,7.170778827866411,-0.42716350741463294,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E123,ffill,domain_itf,standard,rolling,RF,0.9500686591020221,16.57401052764489,-0.02571885571839405,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E123,ffill,domain_itf,standard,rolling,XGBoost,1.0946185034501463,19.582211015498817,-0.36158239039088724,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E124,ffill,domain_itf,standard,lag_rolling,RF,0.41920344004711396,5.732656833830699,0.06922889279205013,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E124,ffill,domain_itf,standard,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E125,ffill,domain_itf,standard,diff,RF,0.36568365270320885,5.8455980247863675,0.2917210896541428,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E125,ffill,domain_itf,standard,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E126,ffill,domain_itf,standard,interaction,RF,1.6289446778116667,31.6652605610664,-1.8744327836110544,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E126,ffill,domain_itf,standard,interaction,XGBoost,1.170724839884515,19.932125571589765,-0.48473570829803414,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E127,ffill,domain_itf,standard,calendar,RF,1.2782247525999926,22.913254372162932,-0.7699212112761675,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E127,ffill,domain_itf,standard,calendar,XGBoost,1.1228557514291633,18.62657745238097,-0.3658009895924723,,"Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E128,ffill,domain_itf,standard,policy_reaction,RF,0.22463718493060802,3.3716138949722696,0.7327261227067241,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E128,ffill,domain_itf,standard,policy_reaction,XGBoost,0.19404083961549454,2.71644168956459,0.8005750425316489,,Forward Fill + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E129,ffill,domain_itf,minmax,none,RF,1.3263450543422792,24.22591795823911,-0.9056912153589418,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E129,ffill,domain_itf,minmax,none,XGBoost,1.116414816994512,17.8752848902771,-0.3501768921921622,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E130,ffill,domain_itf,minmax,lag,RF,0.43594918874196464,6.486418943716342,0.021278711185068078,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E130,ffill,domain_itf,minmax,lag,XGBoost,0.5264331415395779,7.170778827866411,-0.42716350741463294,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E131,ffill,domain_itf,minmax,rolling,RF,0.9501352998935958,16.57947160096311,-0.025862755031626383,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E131,ffill,domain_itf,minmax,rolling,XGBoost,1.0946185034501463,19.582211015498817,-0.36158239039088724,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E132,ffill,domain_itf,minmax,lag_rolling,RF,0.4185357198603727,5.725843504210352,0.07219165325749655,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E132,ffill,domain_itf,minmax,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E133,ffill,domain_itf,minmax,diff,RF,0.3652150830017354,5.841382293479434,0.29353503681166415,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E133,ffill,domain_itf,minmax,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E134,ffill,domain_itf,minmax,interaction,RF,1.6289446778116667,31.6652605610664,-1.8744327836110544,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E134,ffill,domain_itf,minmax,interaction,XGBoost,1.170724839884515,19.932125571589765,-0.48473570829803414,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E135,ffill,domain_itf,minmax,calendar,RF,1.2777813936959108,22.9129206940227,-0.7686936114561558,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E135,ffill,domain_itf,minmax,calendar,XGBoost,1.1228557514291633,18.62657745238097,-0.3658009895924723,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E136,ffill,domain_itf,minmax,policy_reaction,RF,0.20598541778975,3.1099983159179514,0.7752673509057262,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E136,ffill,domain_itf,minmax,policy_reaction,XGBoost,0.19404083961549454,2.71644168956459,0.8005750425316489,,"Forward Fill + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E137,ffill,domain_itf,robust,none,RF,1.3264893898280423,24.22829891062006,-0.9061060000827317,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E137,ffill,domain_itf,robust,none,XGBoost,1.116414816994512,17.8752848902771,-0.3501768921921622,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E138,ffill,domain_itf,robust,lag,RF,0.42774008452233625,6.405509432030108,0.05779112817114107,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E138,ffill,domain_itf,robust,lag,XGBoost,0.5264331415395779,7.170778827866411,-0.42716350741463294,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E139,ffill,domain_itf,robust,rolling,RF,0.9500137859450811,16.575720656140735,-0.025600374162778605,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E139,ffill,domain_itf,robust,rolling,XGBoost,1.0946185034501463,19.582211015498817,-0.36158239039088724,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E140,ffill,domain_itf,robust,lag_rolling,RF,0.41882523301084795,5.7260819475409,0.07090762607267631,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E140,ffill,domain_itf,robust,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E141,ffill,domain_itf,robust,diff,RF,0.3656929942029362,5.847026164882988,0.2916849027931345,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E141,ffill,domain_itf,robust,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E142,ffill,domain_itf,robust,interaction,RF,1.6289446778116667,31.6652605610664,-1.8744327836110544,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E142,ffill,domain_itf,robust,interaction,XGBoost,1.170724839884515,19.932125571589765,-0.48473570829803414,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E143,ffill,domain_itf,robust,calendar,RF,1.2775653387457793,22.901188545128285,-0.7680955393523279,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E143,ffill,domain_itf,robust,calendar,XGBoost,1.1228557514291633,18.62657745238097,-0.3658009895924723,,"Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E144,ffill,domain_itf,robust,policy_reaction,RF,0.22493355854238223,3.383331431177552,0.7320204053616678,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E144,ffill,domain_itf,robust,policy_reaction,XGBoost,0.1934243323986154,2.7110093053456668,0.8018402567211252,,Forward Fill + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E145,ffill,corr_top6,standard,none,RF,2.0099226421372567,39.95315873923607,-3.3762101853768565,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E145,ffill,corr_top6,standard,none,XGBoost,2.2156079945419975,44.23770939330828,-4.317718386435653,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E146,ffill,corr_top6,standard,lag,RF,0.5090312001225623,7.62251598623732,-0.3343694558289636,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E146,ffill,corr_top6,standard,lag,XGBoost,0.5606750597145396,7.583330560346864,-0.6188617558286098,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E147,ffill,corr_top6,standard,rolling,RF,1.080888638803014,19.23511081054196,-0.3276397889291749,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E147,ffill,corr_top6,standard,rolling,XGBoost,1.0041380388336723,18.292345465859512,-0.14579043988858453,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E148,ffill,corr_top6,standard,lag_rolling,RF,0.4886469699409728,6.804556954546957,-0.2646886994934854,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E148,ffill,corr_top6,standard,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E149,ffill,corr_top6,standard,diff,RF,0.4399976832634261,6.601109676485489,-0.02540161559224785,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E149,ffill,corr_top6,standard,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E150,ffill,corr_top6,standard,interaction,RF,2.384736374985947,48.01923392657046,-5.160560680494098,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E150,ffill,corr_top6,standard,interaction,XGBoost,2.4030337568516753,47.62731879851179,-5.2554597010899675,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E151,ffill,corr_top6,standard,calendar,RF,1.9294521830484441,38.241773435382996,-3.032807828485206,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E151,ffill,corr_top6,standard,calendar,XGBoost,2.166249131437375,43.22755464679478,-4.0834234794347255,,"Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E152,ffill,corr_top6,standard,policy_reaction,RF,0.22897519369526284,3.3675718755936446,0.7223037034225004,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E152,ffill,corr_top6,standard,policy_reaction,XGBoost,0.2133865953790018,3.1077360995654484,0.7588276660747909,,Forward Fill + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E153,ffill,corr_top6,minmax,none,RF,2.007172416696081,39.889959587976264,-3.3642422319248046,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E153,ffill,corr_top6,minmax,none,XGBoost,2.2156079945419975,44.23770939330828,-4.317718386435653,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E154,ffill,corr_top6,minmax,lag,RF,0.5070271297295962,7.605045247451085,-0.32388323739461944,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E154,ffill,corr_top6,minmax,lag,XGBoost,0.5606750597145396,7.583330560346864,-0.6188617558286098,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E155,ffill,corr_top6,minmax,rolling,RF,1.0803112777313117,19.2326489107309,-0.3262218393237162,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E155,ffill,corr_top6,minmax,rolling,XGBoost,1.0041380388336723,18.292345465859512,-0.14579043988858453,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E156,ffill,corr_top6,minmax,lag_rolling,RF,0.48863639567951783,6.804459488660018,-0.2646339646640745,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E156,ffill,corr_top6,minmax,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E157,ffill,corr_top6,minmax,diff,RF,0.4392964891734562,6.590281711373737,-0.022135995498590688,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E157,ffill,corr_top6,minmax,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E158,ffill,corr_top6,minmax,interaction,RF,2.3851961907174597,48.02841185492229,-5.162936620948495,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E158,ffill,corr_top6,minmax,interaction,XGBoost,2.4030337568516753,47.62731879851179,-5.2554597010899675,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E159,ffill,corr_top6,minmax,calendar,RF,1.9298143941750259,38.24940093913101,-3.034322108019089,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E159,ffill,corr_top6,minmax,calendar,XGBoost,2.166249131437375,43.22755464679478,-4.0834234794347255,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E160,ffill,corr_top6,minmax,policy_reaction,RF,0.20692177886855273,3.026444708398364,0.7732195439044348,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E160,ffill,corr_top6,minmax,policy_reaction,XGBoost,0.2133865953790018,3.1077360995654484,0.7588276660747909,,"Forward Fill + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E161,ffill,corr_top6,robust,none,RF,2.0075811672813053,39.89732466734135,-3.366019924953358,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E161,ffill,corr_top6,robust,none,XGBoost,2.2156079945419975,44.23770939330828,-4.317718386435653,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E162,ffill,corr_top6,robust,lag,RF,0.4966903895824968,7.502907176388808,-0.2704535798294281,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E162,ffill,corr_top6,robust,lag,XGBoost,0.5606750597145396,7.583330560346864,-0.6188617558286098,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E163,ffill,corr_top6,robust,rolling,RF,1.0799565139394738,19.2186564061439,-0.32535094545239196,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E163,ffill,corr_top6,robust,rolling,XGBoost,1.0041380388336723,18.292345465859512,-0.14579043988858453,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E164,ffill,corr_top6,robust,lag_rolling,RF,0.48850714503721937,6.802360723227921,-0.2639650290886524,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E164,ffill,corr_top6,robust,lag_rolling,XGBoost,0.5838718339153877,8.070733242071505,-0.8056279487014031,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E165,ffill,corr_top6,robust,diff,RF,0.44057887342160323,6.600468967762529,-0.028112297695068067,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E165,ffill,corr_top6,robust,diff,XGBoost,0.5860861882369994,8.114130666140134,-0.8193497337406266,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E166,ffill,corr_top6,robust,interaction,RF,2.3854938386446856,48.034211497308895,-5.164474858997163,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E166,ffill,corr_top6,robust,interaction,XGBoost,2.4030337568516753,47.62731879851179,-5.2554597010899675,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E167,ffill,corr_top6,robust,calendar,RF,1.9293289736140102,38.23605593092247,-3.0322927972121754,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E167,ffill,corr_top6,robust,calendar,XGBoost,2.166249131437375,43.22755464679478,-4.0834234794347255,,"Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E168,ffill,corr_top6,robust,policy_reaction,RF,0.23043429441553093,3.3919615712472337,0.7187532938975325,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E168,ffill,corr_top6,robust,policy_reaction,XGBoost,0.206721579010065,3.020691869937571,0.773658158459156,,Forward Fill + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E169,ffill,mutual_info,standard,none,RF,0.891977951811907,15.492498690136589,0.1381181676169917,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E169,ffill,mutual_info,standard,none,XGBoost,1.0381908102810273,19.538933422808043,-0.1675993592980103,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E170,ffill,mutual_info,standard,lag,RF,0.40729367494094565,6.065644104270399,0.1457153184762865,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E170,ffill,mutual_info,standard,lag,XGBoost,0.4085733210080406,6.18429751090148,0.14033885724251915,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E171,ffill,mutual_info,standard,rolling,RF,0.88300192896793,16.118785371890667,0.11398380493253724,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E171,ffill,mutual_info,standard,rolling,XGBoost,1.0373299732434633,18.449824959934688,-0.2227909316015717,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E172,ffill,mutual_info,standard,lag_rolling,RF,0.3859625134731371,5.407205208201698,0.2109882519490125,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E172,ffill,mutual_info,standard,lag_rolling,XGBoost,0.45475621360779145,5.8116161936461594,-0.09534391868854852,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E173,ffill,mutual_info,standard,diff,RF,0.4052796651175944,6.594703271218656,0.1300328679750825,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E173,ffill,mutual_info,standard,diff,XGBoost,0.37194999566652714,5.343530374004765,0.2672390217639924,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E174,ffill,mutual_info,standard,interaction,RF,1.046716143372607,17.803602831445147,-0.18685409321253799,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E174,ffill,mutual_info,standard,interaction,XGBoost,1.1653818141989234,21.83408652651632,-0.47121437818884115,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E175,ffill,mutual_info,standard,calendar,RF,0.8911018964135542,16.108089004304862,0.13981032927086512,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E175,ffill,mutual_info,standard,calendar,XGBoost,1.069250975281795,19.999734339663625,-0.23850794653061014,,"Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E176,ffill,mutual_info,standard,policy_reaction,RF,0.2577130072406408,4.0430849869326435,0.6482242519339366,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E176,ffill,mutual_info,standard,policy_reaction,XGBoost,0.20150482968584718,2.8520935087285655,0.784937773620671,,Forward Fill + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E177,ffill,mutual_info,minmax,none,RF,0.8919779518119069,15.492498690136589,0.13811816761699203,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E177,ffill,mutual_info,minmax,none,XGBoost,1.0381908102810273,19.538933422808043,-0.1675993592980103,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E178,ffill,mutual_info,minmax,lag,RF,0.4066860990907335,6.065207626602799,0.14826215696392475,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E178,ffill,mutual_info,minmax,lag,XGBoost,0.4085733210080406,6.18429751090148,0.14033885724251915,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E179,ffill,mutual_info,minmax,rolling,RF,0.88300192896793,16.118785371890667,0.11398380493253724,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E179,ffill,mutual_info,minmax,rolling,XGBoost,1.0373299732434633,18.449824959934688,-0.2227909316015717,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E180,ffill,mutual_info,minmax,lag_rolling,RF,0.38596251347313704,5.407205208201696,0.21098825194901283,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E180,ffill,mutual_info,minmax,lag_rolling,XGBoost,0.45475621360779145,5.8116161936461594,-0.09534391868854852,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E181,ffill,mutual_info,minmax,diff,RF,0.40562537915125035,6.605354950739518,0.12854802602410043,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E181,ffill,mutual_info,minmax,diff,XGBoost,0.37194999566652714,5.343530374004765,0.2672390217639924,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E182,ffill,mutual_info,minmax,interaction,RF,1.046716143372607,17.803602831445147,-0.18685409321253799,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E182,ffill,mutual_info,minmax,interaction,XGBoost,1.1653818141989234,21.83408652651632,-0.47121437818884115,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E183,ffill,mutual_info,minmax,calendar,RF,0.8910458117546193,16.10781032935662,0.13991860404013734,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E183,ffill,mutual_info,minmax,calendar,XGBoost,1.069250975281795,19.999734339663625,-0.23850794653061014,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E184,ffill,mutual_info,minmax,policy_reaction,RF,0.2406144786883082,3.8244345921511664,0.6933544040812774,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E184,ffill,mutual_info,minmax,policy_reaction,XGBoost,0.20150482968584718,2.8520935087285655,0.784937773620671,,"Forward Fill + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E185,ffill,mutual_info,robust,none,RF,0.8919779518119068,15.492498690136586,0.13811816761699214,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E185,ffill,mutual_info,robust,none,XGBoost,1.0381908102810273,19.538933422808043,-0.1675993592980103,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E186,ffill,mutual_info,robust,lag,RF,0.40186768320625893,6.010200086499641,0.16832536989251312,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E186,ffill,mutual_info,robust,lag,XGBoost,0.4085733210080406,6.18429751090148,0.14033885724251915,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E187,ffill,mutual_info,robust,rolling,RF,0.8830019289679298,16.118785371890663,0.11398380493253735,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E187,ffill,mutual_info,robust,rolling,XGBoost,1.0373299732434633,18.449824959934688,-0.2227909316015717,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E188,ffill,mutual_info,robust,lag_rolling,RF,0.38597429171089415,5.4073903933868825,0.21094009540823522,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E188,ffill,mutual_info,robust,lag_rolling,XGBoost,0.45475621360779145,5.8116161936461594,-0.09534391868854852,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E189,ffill,mutual_info,robust,diff,RF,0.4054862945102779,6.5981957988339905,0.12914554684552382,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E189,ffill,mutual_info,robust,diff,XGBoost,0.37194999566652714,5.343530374004765,0.2672390217639924,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E190,ffill,mutual_info,robust,interaction,RF,1.046800486724419,17.804698069540382,-0.1870453719772298,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E190,ffill,mutual_info,robust,interaction,XGBoost,1.1653818141989234,21.83408652651632,-0.47121437818884115,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E191,ffill,mutual_info,robust,calendar,RF,0.8910689944223922,16.106607995458635,0.1398738493476689,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E191,ffill,mutual_info,robust,calendar,XGBoost,1.069250975281795,19.999734339663625,-0.23850794653061014,,"Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E192,ffill,mutual_info,robust,policy_reaction,RF,0.25720687045995483,4.04661882703129,0.6496046386574796,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E192,ffill,mutual_info,robust,policy_reaction,XGBoost,0.2001609862717029,2.8276279446146897,0.7877967249199979,,Forward Fill + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E193,mean,all,standard,none,RF,0.9877521996903076,17.995863043130548,-0.056903894914601016,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E193,mean,all,standard,none,XGBoost,1.0872611653041069,20.101203034511936,-0.2805815480876852,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E194,mean,all,standard,lag,RF,1.0656438693290162,18.00060094937466,-0.3641816570005769,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E194,mean,all,standard,lag,XGBoost,0.9949034804830568,16.55810390759327,-0.18907685122153328,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E195,mean,all,standard,rolling,RF,0.9056123062225784,16.688328547408464,0.06802773865683165,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E195,mean,all,standard,rolling,XGBoost,1.0813262261650578,19.403922941311084,-0.3287149709041328,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E196,mean,all,standard,lag_rolling,RF,0.9609159701442532,16.491832230932125,-0.049274644041663374,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E196,mean,all,standard,lag_rolling,XGBoost,1.0174772923534143,18.00737676734427,-0.17643464811314447,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E197,mean,all,standard,diff,RF,0.9179915656278478,16.563076926086957,0.042374421833830556,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E197,mean,all,standard,diff,XGBoost,1.0653092245158373,19.37740961417076,-0.2896436698604141,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E198,mean,all,standard,interaction,RF,1.136967691976799,18.893680903266688,-0.40034722556430524,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E198,mean,all,standard,interaction,XGBoost,1.068144500436417,19.71539758858933,-0.23594602444150325,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E199,mean,all,standard,calendar,RF,1.0173407793696354,17.99536559773122,-0.12117238875387071,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E199,mean,all,standard,calendar,XGBoost,1.0827086939188646,20.02499388670679,-0.26988015262016907,,"Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E200,mean,all,standard,policy_reaction,RF,0.74727694366358,13.493832882417534,0.3291719873333506,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E200,mean,all,standard,policy_reaction,XGBoost,1.2071730997530092,22.2643250296241,-0.7506007995233597,,Mean Imputation + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E201,mean,all,minmax,none,RF,0.9877326412298582,17.995017632502528,-0.05686203986557792,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E201,mean,all,minmax,none,XGBoost,1.0872611653041069,20.101203034511936,-0.2805815480876852,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E202,mean,all,minmax,lag,RF,1.0663984750207551,18.01240588363523,-0.3661143546863588,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E202,mean,all,minmax,lag,XGBoost,0.9949034804830568,16.55810390759327,-0.18907685122153328,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E203,mean,all,minmax,rolling,RF,0.9049304287146914,16.679314941966283,0.06943066057678449,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E203,mean,all,minmax,rolling,XGBoost,1.0813262261650578,19.403922941311084,-0.3287149709041328,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E204,mean,all,minmax,lag_rolling,RF,0.9609279867691582,16.492844540617906,-0.049300887374171376,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E204,mean,all,minmax,lag_rolling,XGBoost,1.0174772923534143,18.00737676734427,-0.17643464811314447,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E205,mean,all,minmax,diff,RF,0.9176686381353699,16.56045031988892,0.04304804291273456,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E205,mean,all,minmax,diff,XGBoost,1.0653092245158373,19.37740961417076,-0.2896436698604141,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E206,mean,all,minmax,interaction,RF,1.1369689006546482,18.894163995054125,-0.4003502029040913,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E206,mean,all,minmax,interaction,XGBoost,1.068144500436417,19.71539758858933,-0.23594602444150325,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E207,mean,all,minmax,calendar,RF,1.0173714619763965,17.9960087615088,-0.12124001803005013,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E207,mean,all,minmax,calendar,XGBoost,1.0827086939188646,20.02499388670679,-0.26988015262016907,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E208,mean,all,minmax,policy_reaction,RF,0.7485065628560031,13.531168261745666,0.32696252095434697,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E208,mean,all,minmax,policy_reaction,XGBoost,1.2071730997530092,22.2643250296241,-0.7506007995233597,,"Mean Imputation + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E209,mean,all,robust,none,RF,0.9882217474548021,18.00026961662951,-0.05790897456208266,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E209,mean,all,robust,none,XGBoost,1.0872611653041069,20.101203034511936,-0.2805815480876852,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E210,mean,all,robust,lag,RF,1.06504754230647,17.987832034044096,-0.3626553107322381,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E210,mean,all,robust,lag,XGBoost,0.9949034804830568,16.55810390759327,-0.18907685122153328,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E211,mean,all,robust,rolling,RF,0.9049290547533964,16.6789505104794,0.06943348635265334,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E211,mean,all,robust,rolling,XGBoost,1.0813262261650578,19.403922941311084,-0.3287149709041328,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E212,mean,all,robust,lag_rolling,RF,0.960927671715461,16.490972501256955,-0.04930019931830354,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E212,mean,all,robust,lag_rolling,XGBoost,1.0174772923534143,18.00737676734427,-0.17643464811314447,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E213,mean,all,robust,diff,RF,0.9175528708266362,16.55748357763646,0.043289473773864384,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E213,mean,all,robust,diff,XGBoost,1.0653092245158373,19.37740961417076,-0.2896436698604141,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E214,mean,all,robust,interaction,RF,1.1369528730912088,18.892358439498572,-0.4003107224160911,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E214,mean,all,robust,interaction,XGBoost,1.068144500436417,19.71539758858933,-0.23594602444150325,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E215,mean,all,robust,calendar,RF,1.018577943646592,18.006900476595046,-0.12390090971788181,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E215,mean,all,robust,calendar,XGBoost,1.0827086939188646,20.02499388670679,-0.26988015262016907,,"Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E216,mean,all,robust,policy_reaction,RF,0.7308517676648707,13.24375425060249,0.3583375466027504,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E216,mean,all,robust,policy_reaction,XGBoost,1.2071730997530092,22.2643250296241,-0.7506007995233597,,Mean Imputation + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E217,mean,domain_itf,standard,none,RF,1.3107555604005843,23.96735622803708,-0.8611565488108863,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E217,mean,domain_itf,standard,none,XGBoost,1.1138207968909575,17.821409353837787,-0.34390983624840366,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E218,mean,domain_itf,standard,lag,RF,1.5024694784942971,29.01685940387699,-1.711810518273487,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E218,mean,domain_itf,standard,lag,XGBoost,0.9959622592918704,15.72430633188121,-0.19160903508868188,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E219,mean,domain_itf,standard,rolling,RF,0.9413974386796443,16.453022636817156,-0.007080948595529657,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E219,mean,domain_itf,standard,rolling,XGBoost,1.089819544530824,19.527925200025535,-0.34966982986638406,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E220,mean,domain_itf,standard,lag_rolling,RF,1.4778187816415587,29.17382705022222,-1.481765363140494,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E220,mean,domain_itf,standard,lag_rolling,XGBoost,1.112914270252594,19.04275814343357,-0.4074785272244714,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E221,mean,domain_itf,standard,diff,RF,1.2396239983997253,21.16961239991139,-0.7462173793706972,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E221,mean,domain_itf,standard,diff,XGBoost,0.9796802205814082,16.074486963506974,-0.09065409755468079,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E222,mean,domain_itf,standard,interaction,RF,1.6244036753667819,31.61093753442814,-1.8584290324117632,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E222,mean,domain_itf,standard,interaction,XGBoost,1.205279956156637,20.549038490607483,-0.5736761248075228,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E223,mean,domain_itf,standard,calendar,RF,1.2705670809047398,22.70568830877595,-0.7487780171469638,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E223,mean,domain_itf,standard,calendar,XGBoost,1.1134932206570685,18.594916606933026,-0.34311946101476054,,"Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E224,mean,domain_itf,standard,policy_reaction,RF,0.7001901979421911,12.183688161305676,0.41104776050829395,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E224,mean,domain_itf,standard,policy_reaction,XGBoost,1.200081867940341,22.2019686750213,-0.7300942874338436,,Mean Imputation + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E225,mean,domain_itf,minmax,none,RF,1.310757088131886,23.968103640045364,-0.8611608872990988,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E225,mean,domain_itf,minmax,none,XGBoost,1.1138207968909575,17.821409353837787,-0.34390983624840366,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E226,mean,domain_itf,minmax,lag,RF,1.5028169879763045,29.019304702728157,-1.7130651046255658,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E226,mean,domain_itf,minmax,lag,XGBoost,0.9959622592918704,15.72430633188121,-0.19160903508868188,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E227,mean,domain_itf,minmax,rolling,RF,0.941488235860906,16.456896408548072,-0.0072752225915013735,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E227,mean,domain_itf,minmax,rolling,XGBoost,1.089819544530824,19.527925200025535,-0.34966982986638406,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E228,mean,domain_itf,minmax,lag_rolling,RF,1.476800054408227,29.15339864076319,-1.4783449565549507,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E228,mean,domain_itf,minmax,lag_rolling,XGBoost,1.112914270252594,19.04275814343357,-0.4074785272244714,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E229,mean,domain_itf,minmax,diff,RF,1.2385293644738244,21.157998214899916,-0.7431347916843676,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E229,mean,domain_itf,minmax,diff,XGBoost,0.9796802205814082,16.074486963506974,-0.09065409755468079,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E230,mean,domain_itf,minmax,interaction,RF,1.6243381297993684,31.609826423317035,-1.8581983587489335,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E230,mean,domain_itf,minmax,interaction,XGBoost,1.205279956156637,20.549038490607483,-0.5736761248075228,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E231,mean,domain_itf,minmax,calendar,RF,1.271080537044778,22.729012060890494,-0.7501917201397874,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E231,mean,domain_itf,minmax,calendar,XGBoost,1.1134932206570685,18.594916606933026,-0.34311946101476054,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E232,mean,domain_itf,minmax,policy_reaction,RF,0.7008262480558048,12.20888820240833,0.4099772705643422,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E232,mean,domain_itf,minmax,policy_reaction,XGBoost,1.200081867940341,22.2019686750213,-0.7300942874338436,,"Mean Imputation + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E233,mean,domain_itf,robust,none,RF,1.3113441943647572,23.978063957505682,-0.8628285401155358,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E233,mean,domain_itf,robust,none,XGBoost,1.1138207968909575,17.821409353837787,-0.34390983624840366,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E234,mean,domain_itf,robust,lag,RF,1.5022018968995337,29.012507532606296,-1.710844687049435,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E234,mean,domain_itf,robust,lag,XGBoost,0.9959622592918704,15.72430633188121,-0.19160903508868188,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E235,mean,domain_itf,robust,rolling,RF,0.9414804662106233,16.456154048111838,-0.0072585975427181815,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E235,mean,domain_itf,robust,rolling,XGBoost,1.089819544530824,19.527925200025535,-0.34966982986638406,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E236,mean,domain_itf,robust,lag_rolling,RF,1.4767310436738286,29.152984284544516,-1.4781133362907592,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E236,mean,domain_itf,robust,lag_rolling,XGBoost,1.112914270252594,19.04275814343357,-0.4074785272244714,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E237,mean,domain_itf,robust,diff,RF,1.2377935313671649,21.151387035776416,-0.7410641500007555,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E237,mean,domain_itf,robust,diff,XGBoost,0.9796802205814082,16.074486963506974,-0.09065409755468079,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E238,mean,domain_itf,robust,interaction,RF,1.624640780293162,31.61538685216694,-1.8592635504309536,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E238,mean,domain_itf,robust,interaction,XGBoost,1.205279956156637,20.549038490607483,-0.5736761248075228,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E239,mean,domain_itf,robust,calendar,RF,1.2721237551877076,22.745124196839196,-0.7530657803795522,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E239,mean,domain_itf,robust,calendar,XGBoost,1.1134932206570685,18.594916606933026,-0.34311946101476054,,"Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E240,mean,domain_itf,robust,policy_reaction,RF,0.6833208253514003,11.764750181119243,0.4390846337657254,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E240,mean,domain_itf,robust,policy_reaction,XGBoost,1.200081867940341,22.2019686750213,-0.7300942874338436,,Mean Imputation + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E241,mean,corr_top6,standard,none,RF,1.9647556830194728,38.87911826201074,-3.1817358363789454,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E241,mean,corr_top6,standard,none,XGBoost,2.2846834062504704,45.745909246899586,-4.654465285628979,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E242,mean,corr_top6,standard,lag,RF,1.926417473431654,37.773742386580196,-3.4580901023084456,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E242,mean,corr_top6,standard,lag,XGBoost,1.7774420472713137,32.56860306354104,-2.7952371926426816,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E243,mean,corr_top6,standard,rolling,RF,1.0725592275690965,19.062249281401836,-0.30725683972848605,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E243,mean,corr_top6,standard,rolling,XGBoost,1.0133943600119864,18.51942405086746,-0.1670119990528316,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E244,mean,corr_top6,standard,lag_rolling,RF,1.7486434538584963,34.59361027031852,-2.474728596278498,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E244,mean,corr_top6,standard,lag_rolling,XGBoost,1.3645380100446458,24.339378736748372,-1.1158731671474658,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E245,mean,corr_top6,standard,diff,RF,2.122734277122841,41.30342142754787,-4.120467584625037,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E245,mean,corr_top6,standard,diff,XGBoost,2.360496511164572,46.30659312608308,-5.331769278309176,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E246,mean,corr_top6,standard,interaction,RF,2.4368713349784614,49.065292776887496,-5.432868683265762,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E246,mean,corr_top6,standard,interaction,XGBoost,2.451394173729309,48.57544822123735,-5.509772127278537,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E247,mean,corr_top6,standard,calendar,RF,1.9249357420743591,38.12073253273674,-3.0139500188114967,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E247,mean,corr_top6,standard,calendar,XGBoost,2.2025425097158373,43.950155483527546,-4.2551859250971855,,"Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E248,mean,corr_top6,standard,policy_reaction,RF,0.7017019434846374,10.608514818725169,0.4085018606199471,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E248,mean,corr_top6,standard,policy_reaction,XGBoost,1.0486028483421523,19.195043651373012,-0.3209004562985698,,Mean Imputation + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E249,mean,corr_top6,minmax,none,RF,1.9646581436832944,38.87769475154375,-3.181320646219188,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E249,mean,corr_top6,minmax,none,XGBoost,2.2846834062504704,45.745909246899586,-4.654465285628979,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E250,mean,corr_top6,minmax,lag,RF,1.9266533773233594,37.77792876272083,-3.4591820205579555,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E250,mean,corr_top6,minmax,lag,XGBoost,1.7774420472713137,32.56860306354104,-2.7952371926426816,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E251,mean,corr_top6,minmax,rolling,RF,1.0720455479836803,19.056051352264696,-0.30600497347967215,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E251,mean,corr_top6,minmax,rolling,XGBoost,1.0133943600119864,18.51942405086746,-0.1670119990528316,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E252,mean,corr_top6,minmax,lag_rolling,RF,1.7484930395353693,34.58977452622103,-2.4741308455247117,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E252,mean,corr_top6,minmax,lag_rolling,XGBoost,1.3645380100446458,24.339378736748372,-1.1158731671474658,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E253,mean,corr_top6,minmax,diff,RF,2.121020216690707,41.27193616090844,-4.112201597266886,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E253,mean,corr_top6,minmax,diff,XGBoost,2.360496511164572,46.30659312608308,-5.331769278309176,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E254,mean,corr_top6,minmax,interaction,RF,2.436999518278803,49.06795875342304,-5.433545459272707,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E254,mean,corr_top6,minmax,interaction,XGBoost,2.451394173729309,48.57544822123735,-5.509772127278537,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E255,mean,corr_top6,minmax,calendar,RF,1.9247981506100258,38.121406359384665,-3.0133762172964387,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E255,mean,corr_top6,minmax,calendar,XGBoost,2.2025425097158373,43.950155483527546,-4.2551859250971855,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E256,mean,corr_top6,minmax,policy_reaction,RF,0.7008329926673452,10.632500221922177,0.40996591398838655,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E256,mean,corr_top6,minmax,policy_reaction,XGBoost,1.0486028483421523,19.195043651373012,-0.3209004562985698,,"Mean Imputation + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E257,mean,corr_top6,robust,none,RF,1.966871141892105,38.928814340976274,-3.1907456615387435,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E257,mean,corr_top6,robust,none,XGBoost,2.2846834062504704,45.745909246899586,-4.654465285628979,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E258,mean,corr_top6,robust,lag,RF,1.9276220625411542,37.8019919226461,-3.463667134123731,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E258,mean,corr_top6,robust,lag,XGBoost,1.7774420472713137,32.56860306354104,-2.7952371926426816,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E259,mean,corr_top6,robust,rolling,RF,1.0719272625666185,19.05088329125146,-0.30571679016353914,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E259,mean,corr_top6,robust,rolling,XGBoost,1.0133943600119864,18.51942405086746,-0.1670119990528316,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E260,mean,corr_top6,robust,lag_rolling,RF,1.748653037272741,34.59439036496507,-2.474766682778868,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E260,mean,corr_top6,robust,lag_rolling,XGBoost,1.3645380100446458,24.339378736748372,-1.1158731671474658,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E261,mean,corr_top6,robust,diff,RF,2.1232138191816183,41.3150354114328,-4.12278135224993,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E261,mean,corr_top6,robust,diff,XGBoost,2.360496511164572,46.30659312608308,-5.331769278309176,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E262,mean,corr_top6,robust,interaction,RF,2.4372881350499247,49.074369514625566,-5.435069414494395,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E262,mean,corr_top6,robust,interaction,XGBoost,2.451394173729309,48.57544822123735,-5.509772127278537,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E263,mean,corr_top6,robust,calendar,RF,1.9278066457380825,38.18139111586789,-3.025931984673707,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E263,mean,corr_top6,robust,calendar,XGBoost,2.2025425097158373,43.950155483527546,-4.2551859250971855,,"Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E264,mean,corr_top6,robust,policy_reaction,RF,0.6977037610143489,10.29034092633965,0.41522317601082404,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E264,mean,corr_top6,robust,policy_reaction,XGBoost,1.0520487818947186,19.270395961740757,-0.3295962445992715,,Mean Imputation + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E265,mean,mutual_info,standard,none,RF,0.9247748642076772,17.435947138306464,0.07357232284866344,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E265,mean,mutual_info,standard,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E266,mean,mutual_info,standard,lag,RF,1.0164631589367223,16.872391797726895,-0.24117011237740016,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E266,mean,mutual_info,standard,lag,XGBoost,1.0193778401087126,17.393428171962334,-0.24829836259233562,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E267,mean,mutual_info,standard,rolling,RF,0.9149151954398106,16.548719829830592,0.048782050312088154,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E267,mean,mutual_info,standard,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E268,mean,mutual_info,standard,lag_rolling,RF,0.9166257261888342,15.925849999047081,0.04522192022300919,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E268,mean,mutual_info,standard,lag_rolling,XGBoost,0.926993077844139,16.401245533005742,0.02350204557456048,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E269,mean,mutual_info,standard,diff,RF,0.9225854713930357,16.66042458552967,0.03276594743501193,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E269,mean,mutual_info,standard,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E270,mean,mutual_info,standard,interaction,RF,1.059641351746448,19.359463529028755,-0.2163464258156147,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E270,mean,mutual_info,standard,interaction,XGBoost,1.1617627967630841,21.420580405499326,-0.46209104502941956,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E271,mean,mutual_info,standard,calendar,RF,0.9834717144293208,18.543344895704728,-0.047763426494296324,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E271,mean,mutual_info,standard,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E272,mean,mutual_info,standard,policy_reaction,RF,0.7722553466093929,14.136737267822863,0.28357641991718063,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E272,mean,mutual_info,standard,policy_reaction,XGBoost,1.0583631957530966,19.13815203003586,-0.3456046587041164,,Mean Imputation + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E273,mean,mutual_info,minmax,none,RF,0.9248533272948511,17.438096896760573,0.07341510953732489,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E273,mean,mutual_info,minmax,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E274,mean,mutual_info,minmax,lag,RF,1.0168360888049988,16.879727657000686,-0.2420810245210565,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E274,mean,mutual_info,minmax,lag,XGBoost,1.0193778401087126,17.393428171962334,-0.24829836259233562,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E275,mean,mutual_info,minmax,rolling,RF,0.9149634492284565,16.549759134441324,0.04868171078217787,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E275,mean,mutual_info,minmax,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E276,mean,mutual_info,minmax,lag_rolling,RF,0.9158964789741305,15.916617734712773,0.04674051667348955,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E276,mean,mutual_info,minmax,lag_rolling,XGBoost,0.926993077844139,16.401245533005742,0.02350204557456048,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E277,mean,mutual_info,minmax,diff,RF,0.9226573936180488,16.663201342363543,0.0326151357456923,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E277,mean,mutual_info,minmax,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E278,mean,mutual_info,minmax,interaction,RF,1.059641351746448,19.359463529028755,-0.21634642581561514,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E278,mean,mutual_info,minmax,interaction,XGBoost,1.1617627967630841,21.420580405499326,-0.46209104502941956,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E279,mean,mutual_info,minmax,calendar,RF,0.9835570682906669,18.542941422044734,-0.047945301648781635,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E279,mean,mutual_info,minmax,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E280,mean,mutual_info,minmax,policy_reaction,RF,0.7734914855599782,14.167971075194826,0.28128104474174287,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E280,mean,mutual_info,minmax,policy_reaction,XGBoost,1.0583631957530966,19.13815203003586,-0.3456046587041164,,"Mean Imputation + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E281,mean,mutual_info,robust,none,RF,0.9248533272948511,17.43809689676057,0.07341510953732489,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E281,mean,mutual_info,robust,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E282,mean,mutual_info,robust,lag,RF,1.0166323326615716,16.87244216235374,-0.2415832918272578,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E282,mean,mutual_info,robust,lag,XGBoost,1.0193778401087126,17.393428171962334,-0.24829836259233562,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E283,mean,mutual_info,robust,rolling,RF,0.9152290303723911,16.554375266608474,0.04812936332468065,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E283,mean,mutual_info,robust,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E284,mean,mutual_info,robust,lag_rolling,RF,0.915788129993659,15.913924990948603,0.046966041252551105,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E284,mean,mutual_info,robust,lag_rolling,XGBoost,0.926993077844139,16.401245533005742,0.02350204557456048,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E285,mean,mutual_info,robust,diff,RF,0.922656011112846,16.662582913173686,0.032618034792760375,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E285,mean,mutual_info,robust,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E286,mean,mutual_info,robust,interaction,RF,1.059641351746448,19.359463529028755,-0.2163464258156147,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E286,mean,mutual_info,robust,interaction,XGBoost,1.1617627967630841,21.420580405499326,-0.46209104502941956,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E287,mean,mutual_info,robust,calendar,RF,0.9835707688783565,18.54190689039281,-0.04797449683624766,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E287,mean,mutual_info,robust,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E288,mean,mutual_info,robust,policy_reaction,RF,0.7438444479207756,13.710096387986662,0.3353205135898817,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E288,mean,mutual_info,robust,policy_reaction,XGBoost,1.0583631957530966,19.13815203003586,-0.3456046587041164,,Mean Imputation + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E289,knn,all,standard,none,RF,0.9944538252590255,18.152752343230087,-0.07129414821644775,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E289,knn,all,standard,none,XGBoost,1.0490340474328645,19.410678595757382,-0.19211637933473513,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E290,knn,all,standard,lag,RF,1.101225467215282,18.62274032534323,-0.4568019595522066,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E290,knn,all,standard,lag,XGBoost,1.0111290300045352,17.016825883151764,-0.22817762981977818,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E291,knn,all,standard,rolling,RF,0.9032285564312363,16.662213712923716,0.07292755028479903,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E291,knn,all,standard,rolling,XGBoost,1.065974182156973,19.193478746992557,-0.2912541432018323,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E292,knn,all,standard,lag_rolling,RF,0.9601631476880198,16.408514596662528,-0.04763119526605997,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E292,knn,all,standard,lag_rolling,XGBoost,1.0466110306118428,18.453642983228015,-0.24476959271396526,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E293,knn,all,standard,diff,RF,0.9431453287735055,16.875613232238383,-0.01082410931108968,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E293,knn,all,standard,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + First Difference
+E294,knn,all,standard,interaction,RF,1.1323266638026666,18.777430599092824,-0.38893830581825517,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E294,knn,all,standard,interaction,XGBoost,1.0824473863991373,19.89365462580083,-0.2692672653457797,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E295,knn,all,standard,calendar,RF,1.0480137804911942,18.196917781967247,-0.1897986557610778,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E295,knn,all,standard,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E296,knn,all,standard,policy_reaction,RF,0.7666532259596841,13.850365532593303,0.293932926862009,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E296,knn,all,standard,policy_reaction,XGBoost,1.2029564615710973,22.200554087373433,-0.7383925119539865,,KNN Imputation (k=5) + Semua Fitur (12) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E297,knn,all,minmax,none,RF,0.9944502669504739,18.152607415693858,-0.07128648172010155,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E297,knn,all,minmax,none,XGBoost,1.0490340474328645,19.410678595757382,-0.19211637933473513,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E298,knn,all,minmax,lag,RF,1.1016819922796037,18.63163151193772,-0.45801007629743595,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E298,knn,all,minmax,lag,XGBoost,1.0111290300045352,17.016825883151764,-0.22817762981977818,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E299,knn,all,minmax,rolling,RF,0.9025830041022966,16.653440362313628,0.07425226462252732,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E299,knn,all,minmax,rolling,XGBoost,1.065974182156973,19.193478746992557,-0.2912541432018323,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E300,knn,all,minmax,lag_rolling,RF,0.960170847651697,16.40902603312117,-0.047647998149018767,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E300,knn,all,minmax,lag_rolling,XGBoost,1.0466110306118428,18.453642983228015,-0.24476959271396526,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E301,knn,all,minmax,diff,RF,0.9427158656995702,16.87152215136159,-0.009903757422231818,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E301,knn,all,minmax,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + First Difference"
+E302,knn,all,minmax,interaction,RF,1.1323270266414298,18.77791369088026,-0.3889391959513837,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E302,knn,all,minmax,interaction,XGBoost,1.0824473863991373,19.89365462580083,-0.2692672653457797,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E303,knn,all,minmax,calendar,RF,1.04794335373942,18.195656183840075,-0.18963875168219158,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E303,knn,all,minmax,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E304,knn,all,minmax,policy_reaction,RF,0.7682513107302333,13.901606845961034,0.2909862724333747,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E304,knn,all,minmax,policy_reaction,XGBoost,1.2029564615710973,22.200554087373433,-0.7383925119539865,,"KNN Imputation (k=5) + Semua Fitur (12) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E305,knn,all,robust,none,RF,0.9944502669504739,18.152607415693858,-0.07128648172010155,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E305,knn,all,robust,none,XGBoost,1.0490340474328645,19.410678595757382,-0.19211637933473513,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Tanpa Feature Engineering
+E306,knn,all,robust,lag,RF,1.1012323049540795,18.623777080899654,-0.4568200507832971,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E306,knn,all,robust,lag,XGBoost,1.0111290300045352,17.016825883151764,-0.22817762981977818,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E307,knn,all,robust,rolling,RF,0.9025830041022967,16.653440362313628,0.0742522646225271,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E307,knn,all,robust,rolling,XGBoost,1.065974182156973,19.193478746992557,-0.2912541432018323,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E308,knn,all,robust,lag_rolling,RF,0.9601694230324017,16.407226762688357,-0.04764488933052213,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E308,knn,all,robust,lag_rolling,XGBoost,1.0466110306118428,18.453642983228015,-0.24476959271396526,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E309,knn,all,robust,diff,RF,0.9426332399202442,16.868744373583805,-0.009726736049738172,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E309,knn,all,robust,diff,XGBoost,1.050389684190569,19.09302269593579,-0.2537739768127154,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + First Difference
+E310,knn,all,robust,interaction,RF,1.1323270266414298,18.77791369088026,-0.38893919595138393,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E310,knn,all,robust,interaction,XGBoost,1.0824473863991373,19.89365462580083,-0.2692672653457797,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E311,knn,all,robust,calendar,RF,1.047993176814482,18.195289181920796,-0.1897518739604167,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E311,knn,all,robust,calendar,XGBoost,1.0991280060457933,20.269585384065152,-0.30868774399371834,,"KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E312,knn,all,robust,policy_reaction,RF,0.7500202331092664,13.584453811430677,0.3242376633394817,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E312,knn,all,robust,policy_reaction,XGBoost,1.2029564615710973,22.200554087373433,-0.7383925119539865,,KNN Imputation (k=5) + Semua Fitur (12) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E313,knn,domain_itf,standard,none,RF,1.408856160104849,26.351893868831112,-1.1501699985000728,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E313,knn,domain_itf,standard,none,XGBoost,1.110150383315944,17.67756676888602,-0.335067161626581,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E314,knn,domain_itf,standard,lag,RF,1.5634384326939335,30.41880108148413,-1.9363619744791283,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E314,knn,domain_itf,standard,lag,XGBoost,0.9634478398945306,15.275552258634214,-0.11507592370183883,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E315,knn,domain_itf,standard,rolling,RF,0.9753151736761968,16.779873832068933,-0.08095674892990568,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E315,knn,domain_itf,standard,rolling,XGBoost,1.0592001442157681,19.091129800362964,-0.274895000490609,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E316,knn,domain_itf,standard,lag_rolling,RF,1.514952180680471,29.97549316818851,-1.6080517510530359,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E316,knn,domain_itf,standard,lag_rolling,XGBoost,1.1199472397927916,19.26142045393007,-0.4253236228488211,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E317,knn,domain_itf,standard,diff,RF,1.3935448609700312,24.756253836650476,-1.2067862216959817,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E317,knn,domain_itf,standard,diff,XGBoost,0.9804374002424746,15.939125555538695,-0.09234064835919176,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + First Difference
+E318,knn,domain_itf,standard,interaction,RF,1.6777868037759536,32.66783063954366,-2.049390449749199,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E318,knn,domain_itf,standard,interaction,XGBoost,1.1966444227562207,20.22407464186413,-0.5512069053633781,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E319,knn,domain_itf,standard,calendar,RF,1.3807547589731735,25.37086456246889,-1.0652497813698751,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E319,knn,domain_itf,standard,calendar,XGBoost,1.1274773288309885,18.573899509542183,-0.3770671653653195,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E320,knn,domain_itf,standard,policy_reaction,RF,0.7413966075098376,13.064453194515425,0.3396879648785065,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E320,knn,domain_itf,standard,policy_reaction,XGBoost,1.1835596118076779,22.072113357368725,-0.6827837034492488,,KNN Imputation (k=5) + Domain Expert — ITF (7) + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E321,knn,domain_itf,minmax,none,RF,1.4078866951388758,26.326202236368307,-1.1472118579272208,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E321,knn,domain_itf,minmax,none,XGBoost,1.110150383315944,17.67756676888602,-0.335067161626581,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E322,knn,domain_itf,minmax,lag,RF,1.5635066566837847,30.41798997543416,-1.9366182489780521,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E322,knn,domain_itf,minmax,lag,XGBoost,0.9634478398945306,15.275552258634214,-0.11507592370183883,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E323,knn,domain_itf,minmax,rolling,RF,0.9753712613856519,16.783376546285933,-0.0810810782400413,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E323,knn,domain_itf,minmax,rolling,XGBoost,1.0592001442157681,19.091129800362964,-0.274895000490609,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E324,knn,domain_itf,minmax,lag_rolling,RF,1.515233833318081,29.980349133725483,-1.6090215941245778,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E324,knn,domain_itf,minmax,lag_rolling,XGBoost,1.1199472397927916,19.26142045393007,-0.4253236228488211,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E325,knn,domain_itf,minmax,diff,RF,1.3931661631482284,24.75767241995682,-1.2055869900003153,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E325,knn,domain_itf,minmax,diff,XGBoost,0.9804374002424746,15.939125555538695,-0.09234064835919176,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + First Difference"
+E326,knn,domain_itf,minmax,interaction,RF,1.6777868037759536,32.66783063954366,-2.049390449749199,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E326,knn,domain_itf,minmax,interaction,XGBoost,1.1966444227562207,20.22407464186413,-0.5512069053633781,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E327,knn,domain_itf,minmax,calendar,RF,1.3810395914038633,25.385481989611623,-1.0661019396343394,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E327,knn,domain_itf,minmax,calendar,XGBoost,1.1274773288309885,18.573899509542183,-0.3770671653653195,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E328,knn,domain_itf,minmax,policy_reaction,RF,0.7426592510537527,13.099389956418397,0.33743694653404444,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E328,knn,domain_itf,minmax,policy_reaction,XGBoost,1.1835596118076779,22.072113357368725,-0.6827837034492488,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E329,knn,domain_itf,robust,none,RF,1.4079888977710557,26.328106998273064,-1.1475236140788647,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E329,knn,domain_itf,robust,none,XGBoost,1.110150383315944,17.67756676888602,-0.335067161626581,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Tanpa Feature Engineering
+E330,knn,domain_itf,robust,lag,RF,1.5639782776314117,30.430810283866776,-1.9383901372637644,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E330,knn,domain_itf,robust,lag,XGBoost,0.9634478398945306,15.275552258634214,-0.11507592370183883,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E331,knn,domain_itf,robust,rolling,RF,0.9753559257372064,16.782944504782467,-0.08104708308419073,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E331,knn,domain_itf,robust,rolling,XGBoost,1.0592001442157681,19.091129800362964,-0.274895000490609,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E332,knn,domain_itf,robust,lag_rolling,RF,1.5147909154327575,29.972638454874605,-1.6074965312494798,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E332,knn,domain_itf,robust,lag_rolling,XGBoost,1.1199472397927916,19.26142045393007,-0.4253236228488211,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E333,knn,domain_itf,robust,diff,RF,1.3922728287711414,24.74633455147609,-1.2027593373920773,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E333,knn,domain_itf,robust,diff,XGBoost,0.9804374002424746,15.939125555538695,-0.09234064835919176,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + First Difference
+E334,knn,domain_itf,robust,interaction,RF,1.6777936163075973,32.66785403135653,-2.049415213457034,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E334,knn,domain_itf,robust,interaction,XGBoost,1.1966444227562207,20.22407464186413,-0.5512069053633781,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E335,knn,domain_itf,robust,calendar,RF,1.3806663370419294,25.36797900618688,-1.0649852774443098,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E335,knn,domain_itf,robust,calendar,XGBoost,1.1274773288309885,18.573899509542183,-0.3770671653653195,,"KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E336,knn,domain_itf,robust,policy_reaction,RF,0.7230044301671403,12.61681534617761,0.3720429495125981,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E336,knn,domain_itf,robust,policy_reaction,XGBoost,1.1835596118076779,22.072113357368725,-0.6827837034492488,,KNN Imputation (k=5) + Domain Expert — ITF (7) + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E337,knn,corr_top6,standard,none,RF,2.0740945368437838,41.354277290360756,-3.660114445784947,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E337,knn,corr_top6,standard,none,XGBoost,2.232197634075262,44.419528290713714,-4.397650673062906,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E338,knn,corr_top6,standard,lag,RF,1.9895730569841428,39.07896216590994,-3.755189252347342,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E338,knn,corr_top6,standard,lag,XGBoost,1.7974981315938106,33.16995430205841,-2.881368878925296,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E339,knn,corr_top6,standard,rolling,RF,1.127483838598471,19.802552011018754,-0.4445713801943245,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E339,knn,corr_top6,standard,rolling,XGBoost,0.9994428361199694,18.300647414067733,-0.13510039372624427,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E340,knn,corr_top6,standard,lag_rolling,RF,1.7732081575132566,35.13583585198319,-2.573039330230899,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E340,knn,corr_top6,standard,lag_rolling,XGBoost,1.4090892080726698,25.508586272332124,-1.2562921533610742,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E341,knn,corr_top6,standard,diff,RF,2.285307843743618,44.745235688924986,-4.93482306788775,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E341,knn,corr_top6,standard,diff,XGBoost,2.308391282596997,45.368909798770964,-5.05532150405543,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + First Difference
+E342,knn,corr_top6,standard,interaction,RF,2.41513384521229,48.41347626161042,-5.318615019948435,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E342,knn,corr_top6,standard,interaction,XGBoost,2.3541296632825306,46.3123119842615,-5.003440998290286,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E343,knn,corr_top6,standard,calendar,RF,2.054296389048674,40.90847009656196,-3.5715733557843405,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E343,knn,corr_top6,standard,calendar,XGBoost,2.3848229617495966,47.70528223261755,-5.161008052959367,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E344,knn,corr_top6,standard,policy_reaction,RF,0.7400602837803706,11.358966988407248,0.3420661667852022,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E344,knn,corr_top6,standard,policy_reaction,XGBoost,1.0563131148645717,19.338297830697947,-0.34039675528884294,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E345,knn,corr_top6,minmax,none,RF,2.071855436728039,41.29982782409989,-3.650058172727997,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E345,knn,corr_top6,minmax,none,XGBoost,2.232197634075262,44.419528290713714,-4.397650673062906,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E346,knn,corr_top6,minmax,lag,RF,1.989913041939022,39.0851090056845,-3.756814556761962,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E346,knn,corr_top6,minmax,lag,XGBoost,1.7974981315938106,33.16995430205841,-2.881368878925296,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E347,knn,corr_top6,minmax,rolling,RF,1.1271134514367371,19.80079872798774,-0.443622430345161,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E347,knn,corr_top6,minmax,rolling,XGBoost,0.9994428361199694,18.300647414067733,-0.13510039372624427,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E348,knn,corr_top6,minmax,lag_rolling,RF,1.7732911648139573,35.136977737308754,-2.573373859813092,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E348,knn,corr_top6,minmax,lag_rolling,XGBoost,1.4090892080726698,25.508586272332124,-1.2562921533610742,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E349,knn,corr_top6,minmax,diff,RF,2.28383058869934,44.721504637262015,-4.927152842012393,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E349,knn,corr_top6,minmax,diff,XGBoost,2.308391282596997,45.368909798770964,-5.05532150405543,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + First Difference"
+E350,knn,corr_top6,minmax,interaction,RF,2.415308186649212,48.41715673089958,-5.319527297489185,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E350,knn,corr_top6,minmax,interaction,XGBoost,2.3541296632825306,46.3123119842615,-5.003440998290286,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E351,knn,corr_top6,minmax,calendar,RF,2.054552897307467,40.91885293251961,-3.572715079576989,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E351,knn,corr_top6,minmax,calendar,XGBoost,2.3848229617495966,47.70528223261755,-5.161008052959367,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E352,knn,corr_top6,minmax,policy_reaction,RF,0.739103677263152,11.344657458996831,0.34376596620381183,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E352,knn,corr_top6,minmax,policy_reaction,XGBoost,1.0563131148645717,19.338297830697947,-0.34039675528884294,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E353,knn,corr_top6,robust,none,RF,2.0716230394707487,41.294616306379055,-3.6490150496043583,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E353,knn,corr_top6,robust,none,XGBoost,2.232197634075262,44.419528290713714,-4.397650673062906,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Tanpa Feature Engineering
+E354,knn,corr_top6,robust,lag,RF,1.990417282977789,39.09991330678295,-3.7592256018289856,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E354,knn,corr_top6,robust,lag,XGBoost,1.7974981315938106,33.16995430205841,-2.881368878925296,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E355,knn,corr_top6,robust,rolling,RF,1.1267308092053716,19.787042839786416,-0.44264240984754544,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E355,knn,corr_top6,robust,rolling,XGBoost,0.9994428361199694,18.300647414067733,-0.13510039372624427,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E356,knn,corr_top6,robust,lag_rolling,RF,1.773330710193221,35.139015795458164,-2.573533238039287,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E356,knn,corr_top6,robust,lag_rolling,XGBoost,1.4090892080726698,25.508586272332124,-1.2562921533610742,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E357,knn,corr_top6,robust,diff,RF,2.2854590688543817,44.7442519839941,-4.935608541033606,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E357,knn,corr_top6,robust,diff,XGBoost,2.308391282596997,45.368909798770964,-5.05532150405543,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + First Difference
+E358,knn,corr_top6,robust,interaction,RF,2.415301839391313,48.417017842010694,-5.319494082997491,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E358,knn,corr_top6,robust,interaction,XGBoost,2.3541296632825306,46.3123119842615,-5.003440998290286,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E359,knn,corr_top6,robust,calendar,RF,2.0530286050881963,40.88062956507651,-3.5659325154344037,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E359,knn,corr_top6,robust,calendar,XGBoost,2.3848229617495966,47.70528223261755,-5.161008052959367,,"KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E360,knn,corr_top6,robust,policy_reaction,RF,0.7358844380243343,11.019418972884287,0.3494701012336411,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E360,knn,corr_top6,robust,policy_reaction,XGBoost,1.0563131148645717,19.338297830697947,-0.34039675528884294,,KNN Imputation (k=5) + Top-6 Korelasi Pearson + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E361,knn,mutual_info,standard,none,RF,0.9247748642076773,17.435947138306467,0.07357232284866311,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E361,knn,mutual_info,standard,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Tanpa Feature Engineering
+E362,knn,mutual_info,standard,lag,RF,1.0060518690003704,16.594393753457446,-0.21587455098328023,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E362,knn,mutual_info,standard,lag,XGBoost,1.0673913957179493,17.90615736042008,-0.36865950969092975,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag Features (t-1, t-3, t-6)"
+E363,knn,mutual_info,standard,rolling,RF,0.9149151954398106,16.54871982983059,0.048782050312088154,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E363,knn,mutual_info,standard,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Rolling Mean & Std (3, 6)"
+E364,knn,mutual_info,standard,lag_rolling,RF,0.881252037485601,15.292559554708227,0.11749205526705175,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E364,knn,mutual_info,standard,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Lag (1,3) + Rolling (6)"
+E365,knn,mutual_info,standard,diff,RF,0.9225854713930358,16.66042458552967,0.03276594743501171,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E365,knn,mutual_info,standard,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + First Difference
+E366,knn,mutual_info,standard,interaction,RF,1.0863902479082688,19.941907460340968,-0.2785308281654053,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E366,knn,mutual_info,standard,interaction,XGBoost,1.1596004469161614,21.41837440986081,-0.4566534288294226,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Interaksi Ekonomi
+E367,knn,mutual_info,standard,calendar,RF,0.9834717144293209,18.543344895704728,-0.047763426494296546,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E367,knn,mutual_info,standard,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fitur Kalender (Bulan, Kuartal)"
+E368,knn,mutual_info,standard,policy_reaction,RF,0.7698028451431027,14.087466638774803,0.2881195802368336,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E368,knn,mutual_info,standard,policy_reaction,XGBoost,1.076862271793978,19.415885161525626,-0.39305526898567567,,KNN Imputation (k=5) + Mutual Info Top-7 + StandardScaler (Z-Score) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E369,knn,mutual_info,minmax,none,RF,0.9248533272948511,17.438096896760573,0.07341510953732489,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E369,knn,mutual_info,minmax,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Tanpa Feature Engineering"
+E370,knn,mutual_info,minmax,lag,RF,1.0062416956487819,16.593649185591524,-0.21633342824944046,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E370,knn,mutual_info,minmax,lag,XGBoost,1.0673913957179493,17.90615736042008,-0.36865950969092975,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag Features (t-1, t-3, t-6)"
+E371,knn,mutual_info,minmax,rolling,RF,0.9149634492284565,16.549759134441324,0.04868171078217787,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E371,knn,mutual_info,minmax,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Rolling Mean & Std (3, 6)"
+E372,knn,mutual_info,minmax,lag_rolling,RF,0.8812520374856011,15.292559554708227,0.11749205526705153,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E372,knn,mutual_info,minmax,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Lag (1,3) + Rolling (6)"
+E373,knn,mutual_info,minmax,diff,RF,0.9226573936180489,16.663201342363543,0.03261513574569219,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E373,knn,mutual_info,minmax,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + First Difference"
+E374,knn,mutual_info,minmax,interaction,RF,1.086390247908269,19.941907460340968,-0.2785308281654053,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E374,knn,mutual_info,minmax,interaction,XGBoost,1.1596004469161614,21.41837440986081,-0.4566534288294226,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Interaksi Ekonomi"
+E375,knn,mutual_info,minmax,calendar,RF,0.9835570682906669,18.542941422044734,-0.047945301648781635,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E375,knn,mutual_info,minmax,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fitur Kalender (Bulan, Kuartal)"
+E376,knn,mutual_info,minmax,policy_reaction,RF,0.7725460838903746,14.149051518826457,0.2830368826951082,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E376,knn,mutual_info,minmax,policy_reaction,XGBoost,1.076862271793978,19.415885161525626,-0.39305526898567567,,"KNN Imputation (k=5) + Mutual Info Top-7 + MinMaxScaler [0, 1] + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi"
+E377,knn,mutual_info,robust,none,RF,0.9248533272948511,17.438096896760573,0.07341510953732489,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E377,knn,mutual_info,robust,none,XGBoost,1.1286295619113798,20.842425184132523,-0.37988320977145307,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Tanpa Feature Engineering
+E378,knn,mutual_info,robust,lag,RF,1.0070601473418945,16.601564581279312,-0.21831290300090433,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E378,knn,mutual_info,robust,lag,XGBoost,1.0673913957179493,17.90615736042008,-0.36865950969092975,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag Features (t-1, t-3, t-6)"
+E379,knn,mutual_info,robust,rolling,RF,0.9152290303723911,16.554375266608474,0.04812936332468065,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E379,knn,mutual_info,robust,rolling,XGBoost,1.1078112830176103,19.504650231507167,-0.3946008443062077,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Rolling Mean & Std (3, 6)"
+E380,knn,mutual_info,robust,lag_rolling,RF,0.881196632735695,15.289362005847412,0.11760301919759086,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E380,knn,mutual_info,robust,lag_rolling,XGBoost,1.045512080014564,18.304408931069414,-0.24215692750625029,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Lag (1,3) + Rolling (6)"
+E381,knn,mutual_info,robust,diff,RF,0.922656011112846,16.662582913173686,0.032618034792760375,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E381,knn,mutual_info,robust,diff,XGBoost,1.2175578268815195,21.948125425454744,-0.6846029203728927,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + First Difference
+E382,knn,mutual_info,robust,interaction,RF,1.086390247908269,19.941907460340968,-0.2785308281654053,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E382,knn,mutual_info,robust,interaction,XGBoost,1.1596004469161614,21.41837440986081,-0.4566534288294226,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Interaksi Ekonomi
+E383,knn,mutual_info,robust,calendar,RF,0.9835707688783565,18.54190689039281,-0.04797449683624766,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E383,knn,mutual_info,robust,calendar,XGBoost,1.1853873048696455,21.941947143250403,-0.5221590386417023,,"KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fitur Kalender (Bulan, Kuartal)"
+E384,knn,mutual_info,robust,policy_reaction,RF,0.7455493778277363,13.73117372315448,0.3322700622457384,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi
+E384,knn,mutual_info,robust,policy_reaction,XGBoost,1.076862271793978,19.415885161525626,-0.39305526898567567,,KNN Imputation (k=5) + Mutual Info Top-7 + RobustScaler (IQR) + Fungsi Reaksi Kebijakan (Taylor/ITF) + Persistensi

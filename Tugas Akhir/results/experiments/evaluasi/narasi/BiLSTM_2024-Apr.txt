@@ -1,0 +1,18 @@
+Model     : BiLSTM
+Bulan     : 2024-Apr (kontrol meleset)
+Aktual    : 6,25% (bulan sebelumnya 6,00%)
+Prediksi  : 6,00% (arah meleset)
+Faktor    : arah kebijakan suku bunga (interest-rate stance) (mendorong naik, ~18%); suku bunga The Fed (Federal Funds Rate) (menahan turun, ~12%); jumlah uang beredar (M2) (menahan turun, ~11%); inflasi tahunan (year-on-year) (menahan turun, ~11%); nilai tukar rupiah (mendorong naik, ~11%)
+------------------------------------------------------------------------
+
+Prediksi BI-Rate untuk periode April 2024 adalah sebesar 6,00%. Angka ini terbentuk dari interaksi berbagai faktor yang saling tarik-menarik; beberapa faktor berperan menggeser angka prediksi ke arah yang lebih tinggi, sementara faktor lain menahannya agar tidak naik lebih jauh.
+
+Salah satu faktor yang paling kuat menggeser prediksi ke arah lebih tinggi adalah arah kebijakan suku bunga (interest-rate stance), yang menunjukkan kecenderungan Bank Indonesia dalam mengatur BI-Rate selama enam bulan terakhir. Pada bulan ini, indikator ini menunjukkan nilai 1, sama dengan bulan sebelumnya, yang berarti sikap kebijakan cenderung tetap mengetat. Faktor ini berkontribusi sekitar 18% terhadap prediksi bulan ini. Selain itu, nilai tukar rupiah juga berperan menaikkan angka prediksi. Rata-rata kurs rupiah terhadap dolar AS mengalami pelemahan, naik dari 15.699 menjadi 16.078 Rp/USD, memberikan pengaruh sekitar 11% terhadap prediksi. Pertumbuhan ekonomi, yang diukur dari laju pertumbuhan PDB dibanding setahun lalu, turut berkontribusi meski lebih kecil, sekitar 4%.
+
+Di sisi lain, beberapa faktor menahan angka prediksi agar tidak naik lebih tinggi. Suku bunga The Fed (Federal Funds Rate), yang saat ini berada pada 5,33% dan merupakan nilai tertinggi sepanjang rentang data sejak 2005, berperan menahan prediksi dengan pengaruh sekitar 12%. Jumlah uang beredar (M2) juga ikut menahan angka prediksi. Meski mengalami kenaikan dari 8.891 triliun menjadi 8.926 triliun Rp, faktor ini tetap memberikan pengaruh menahan sekitar 11%. Selain itu, inflasi tahunan yang sedikit turun dari 3,05% menjadi 3% dan pertumbuhan kredit yang meningkat dari 11,88% menjadi 12,29% juga masing-masing berkontribusi menahan prediksi sebesar 11%.
+
+Faktor lain yang turut menahan prediksi adalah suku bunga riil (real interest rate), yang memberikan pengaruh sekitar 8% terhadap prediksi bulan ini. Beberapa faktor lain, seperti siklus suku bunga The Fed dan BI-Rate tiga bulan lalu, berpengaruh lebih kecil, masing-masing di bawah 5%, sehingga tidak terlalu dominan dalam menentukan arah prediksi.
+
+Secara keseluruhan, arah kebijakan suku bunga menjadi faktor paling dominan yang menggeser prediksi BI-Rate ke arah lebih tinggi bulan ini, dengan kontribusi sekitar 18%. Namun, faktor-faktor lain seperti suku bunga The Fed dan jumlah uang beredar juga memainkan peran penting dalam menyeimbangkan prediksi agar tidak terlalu tinggi.
+
+Penjelasan ini disusun berdasarkan pola yang dipelajari model dari data historis. Untuk interpretasi ekonomi yang lebih mendalam, analisis dari pakar tetap diperlukan.

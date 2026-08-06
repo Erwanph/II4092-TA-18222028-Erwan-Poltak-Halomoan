@@ -1,0 +1,16 @@
+Model     : XGBoost
+Bulan     : 2024-Apr (kontrol meleset)
+Aktual    : 6,25% (bulan sebelumnya 6,00%)
+Prediksi  : 6,00% (arah meleset)
+Faktor    : pertumbuhan kredit (mendorong naik, ~27%); BI-Rate bulan sebelumnya (menahan turun, ~19%); BI-Rate dua bulan lalu (menahan turun, ~11%); inflasi tahunan (year-on-year) (menahan turun, ~9%); arah kebijakan suku bunga (interest-rate stance) (mendorong naik, ~7%)
+------------------------------------------------------------------------
+
+Prediksi BI-Rate untuk April 2024 berada pada angka 6,00%. Angka ini merupakan hasil dari interaksi berbagai faktor ekonomi yang saling tarik-menarik. Beberapa faktor berperan mendorong angka prediksi ke arah yang lebih tinggi, sementara yang lain menahannya lebih rendah.
+
+Salah satu faktor utama yang menggeser prediksi ke arah lebih tinggi adalah pertumbuhan kredit, yang mencerminkan laju pertumbuhan kredit yang disalurkan perbankan dibanding setahun lalu. Pada bulan ini, pertumbuhan kredit mencapai 12,29%, naik dari 11,88% pada bulan sebelumnya, menunjukkan peningkatan sebesar 0,41%. Faktor ini memberikan pengaruh sekitar 27% dari total pengaruh bulan ini, menjadikannya salah satu pendorong utama. Selain itu, arah kebijakan suku bunga, yang menunjukkan kecenderungan Bank Indonesia dalam mengelola BI-Rate selama enam bulan terakhir, turut berperan dengan pengaruh sekitar 7%. Suku bunga riil, yang merupakan BI-Rate setelah dikurangi inflasi dan mencerminkan imbal hasil sebenarnya, juga ikut berkontribusi dengan pengaruh sekitar 5%. Nilai tukar rupiah, yang rata-rata kursnya terhadap dolar AS mencerminkan kekuatan mata uang, memberikan pengaruh serupa sekitar 5%.
+
+Di sisi lain, beberapa faktor menahan angka prediksi agar tidak lebih tinggi. BI-Rate bulan sebelumnya, yang tetap stabil di angka 6%, menunjukkan kebiasaan Bank Indonesia dalam menjaga kesinambungan suku bunga dan memberikan pengaruh sekitar 19%. BI-Rate dua bulan lalu, yang juga tidak berubah, menambah pengaruh sekitar 11%. Inflasi tahunan, yang turun sedikit dari 3,05% menjadi 3%, ikut menahan prediksi dengan pengaruh sekitar 9%. Selain itu, jumlah uang beredar (M2) meningkat dari 8.891 triliun Rp menjadi 8.926 triliun Rp, naik sebesar 35,04 triliun Rp, dengan pengaruh sekitar 6%.
+
+Secara keseluruhan, pertumbuhan kredit menjadi faktor paling dominan yang mendorong prediksi bulan ini dengan kontribusi terbesar, sekitar 27%. Sementara itu, BI-Rate bulan sebelumnya dan dua bulan lalu menjadi penahan utama, dengan total pengaruh sekitar 30% jika digabungkan. Faktor-faktor lainnya, meskipun tidak sebesar dua kelompok utama ini, tetap berperan dalam membentuk keseimbangan prediksi BI-Rate.
+
+Penjelasan ini disusun berdasarkan pola yang dipelajari model dari data historis. Untuk interpretasi ekonomi yang lebih dalam, analisis dari pakar tetap diperlukan.

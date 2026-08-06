@@ -1,0 +1,6 @@
+{
+  "RMSE": 0.16050344240245218,
+  "MAPE": 2.203183219918662,
+  "R2": 0.9392726564628577,
+  "model_path": "models/BASELINE_BiLSTM.keras"
+}

@@ -1,0 +1,5 @@
+model,n_ulang,n_fitur_teratas_berbeda,fitur_teratas,sd_pangsa_maks,sd_pangsa_rata
+RF,5,1,Credit_Growth_YoY_Pct,0.0,0.0
+XGBoost,5,1,Credit_Growth_YoY_Pct,0.3770831362067945,0.10369980657255844
+LSTM,5,2,M2_Triliun_Rp | real_rate,3.1370515963215317,1.530588594103527
+BiLSTM,5,1,Credit_Growth_YoY_Pct,0.10296106269594589,0.0593354501244002

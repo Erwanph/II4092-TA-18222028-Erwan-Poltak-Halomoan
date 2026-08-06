@@ -1,0 +1,16 @@
+Model     : RF
+Bulan     : 2025-Jul (kontrol tepat)
+Aktual    : 5,25% (bulan sebelumnya 5,50%)
+Prediksi  : 5,25% (arah tepat)
+Faktor    : BI-Rate bulan sebelumnya (menahan turun, ~73%); pertumbuhan kredit (menahan turun, ~15%); suku bunga riil (real interest rate) (mendorong naik, ~4%); BI-Rate dua bulan lalu (menahan turun, ~3%); arah kebijakan suku bunga (interest-rate stance) (menahan turun, ~1%)
+------------------------------------------------------------------------
+
+Prediksi BI-Rate untuk periode Juli 2025 berada pada angka 5,25%. Angka ini merupakan hasil dari interaksi berbagai faktor yang berperan baik dalam mendorong prediksi ke arah lebih tinggi maupun menahannya lebih rendah.
+
+Salah satu faktor yang berperan mendorong angka prediksi ke arah lebih tinggi adalah suku bunga riil, yang merupakan BI-Rate setelah dikurangi inflasi. Ini mencerminkan imbal hasil sebenarnya setelah memperhitungkan kenaikan harga. Pada bulan ini, suku bunga riil tercatat sebesar 3,13%, turun dari 3,63% bulan sebelumnya. Meski mengalami penurunan, faktor ini tetap berpengaruh sekitar 4% terhadap prediksi bulan ini, menggeser angka prediksi ke arah lebih tinggi. Selain itu, inflasi tahunan, yang mengukur kenaikan harga barang dan jasa dibanding setahun lalu, juga berperan dalam mendorong prediksi, meskipun pengaruhnya relatif kecil, sekitar 1%. Demikian pula dengan BI-Rate tiga bulan lalu, perubahan suku bunga The Fed, dan jumlah uang beredar (M2), masing-masing berkontribusi sekitar 1% terhadap kenaikan prediksi.
+
+Di sisi lain, beberapa faktor berperan menahan angka prediksi lebih rendah. Yang paling dominan adalah BI-Rate bulan sebelumnya, yang tetap pada 5,50%, menunjukkan stabilitas tanpa perubahan dari bulan sebelumnya. Faktor ini memiliki pengaruh besar, sekitar 73% dari total pengaruh bulan ini, menahan angka prediksi ke arah lebih rendah. Pertumbuhan kredit juga berperan signifikan, dengan pengaruh sekitar 15%. Pertumbuhan kredit bulan ini tercatat 6,67%, turun dari 7,57% bulan sebelumnya, penurunan sebesar 0,90% ini turut menekan angka prediksi ke bawah. BI-Rate dua bulan lalu yang turun dari 5,75% menjadi 5,50% juga berkontribusi sekitar 3% dalam menahan prediksi lebih rendah. Faktor lain seperti arah kebijakan suku bunga dan tekanan nilai tukar, meski pengaruhnya kecil, tetap ikut menahan prediksi ke arah lebih rendah, masing-masing sekitar 1%.
+
+Secara keseluruhan, faktor yang paling dominan dalam menentukan prediksi bulan ini adalah BI-Rate bulan sebelumnya, dengan pengaruh sebesar 73%. Faktor ini menahan angka prediksi lebih rendah, sementara faktor lain seperti suku bunga riil dan pertumbuhan kredit saling mengimbangi pengaruhnya.
+
+Penjelasan ini disusun berdasarkan pola yang dipelajari model dari data historis. Untuk interpretasi ekonomi yang lebih dalam, tetap diperlukan analisis dari para pakar.

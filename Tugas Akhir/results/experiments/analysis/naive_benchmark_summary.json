@@ -1,0 +1,9 @@
+{
+  "n_test":36,
+  "periode_uji":"2023-Jan s.d. 2025-Des",
+  "n_change":9,
+  "n_hold":27,
+  "rmse_random_walk":0.125,
+  "mae_naive_insample_train":0.0880952381,
+  "catatan":"U2 pada bulan-tahan tidak terdefinisi karena galat random walk nol persis di sana."
+}
